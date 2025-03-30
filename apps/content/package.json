@@ -8,6 +8,7 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
+    "@pinia/colada": "^0.13.6",
     "@rubenbupe/orpc-arktype": "workspace:*",
     "@rubenbupe/orpc-client": "workspace:*",
     "@rubenbupe/orpc-contract": "workspace:*",
@@ -20,7 +21,6 @@
     "@rubenbupe/orpc-vue-colada": "workspace:*",
     "@rubenbupe/orpc-vue-query": "workspace:*",
     "@rubenbupe/orpc-zod": "workspace:*",
-    "@pinia/colada": "^0.13.6",
     "@tanstack/react-query": "^5.66.4",
     "@tanstack/solid-query": "^5.66.4",
     "@tanstack/svelte-query": "^5.66.4",

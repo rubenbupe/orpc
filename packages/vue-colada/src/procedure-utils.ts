@@ -1,6 +1,6 @@
+import type { _EmptyObject } from '@pinia/colada'
 import type { Client, ClientContext } from '@rubenbupe/orpc-client'
 import type { MaybeOptionalOptions } from '@rubenbupe/orpc-shared'
-import type { _EmptyObject } from '@pinia/colada'
 import type { MutationOptions, MutationOptionsIn, QueryOptions, QueryOptionsIn } from './types'
 import { computed, toValue } from 'vue'
 import { buildKey } from './key'

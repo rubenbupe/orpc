@@ -1,6 +1,6 @@
+import type { UseMutationOptions, UseQueryOptions } from '@pinia/colada'
 import type { ClientContext } from '@rubenbupe/orpc-client'
 import type { SetOptional } from '@rubenbupe/orpc-shared'
-import type { UseMutationOptions, UseQueryOptions } from '@pinia/colada'
 import type { MaybeRefOrGetter } from 'vue'
 
 export type UseQueryFnContext = Parameters<UseQueryOptions<any>['query']>[0]
