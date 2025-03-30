@@ -16,6 +16,12 @@
     "tanstack query",
     "solid"
   ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "publishConfig": {
     "exports": {
       ".": {
@@ -25,9 +31,6 @@
         "default": "./dist/index.mjs"
       }
     }
-  },
-  "exports": {
-    ".": "./src/index.ts"
   },
   "files": [
     "dist"

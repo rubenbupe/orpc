@@ -13,6 +13,17 @@
     "unnoq",
     "orpc"
   ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./standard": "./src/adapters/standard/index.ts",
+    "./fetch": "./src/adapters/fetch/index.ts",
+    "./hono": "./src/adapters/hono/index.ts",
+    "./next": "./src/adapters/next/index.ts",
+    "./node": "./src/adapters/node/index.ts"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "publishConfig": {
     "exports": {
       ".": {
@@ -52,14 +63,6 @@
         "default": "./dist/adapters/node/index.mjs"
       }
     }
-  },
-  "exports": {
-    ".": "./src/index.ts",
-    "./standard": "./src/adapters/standard/index.ts",
-    "./fetch": "./src/adapters/fetch/index.ts",
-    "./hono": "./src/adapters/hono/index.ts",
-    "./next": "./src/adapters/next/index.ts",
-    "./node": "./src/adapters/node/index.ts"
   },
   "files": [
     "dist"

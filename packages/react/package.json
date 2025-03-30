@@ -15,6 +15,13 @@
     "react",
     "nextjs"
   ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./hooks": "./src/hooks/index.ts"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "publishConfig": {
     "exports": {
       ".": {
@@ -30,10 +37,6 @@
         "default": "./dist/hooks/index.mjs"
       }
     }
-  },
-  "exports": {
-    ".": "./src/index.ts",
-    "./hooks": "./src/hooks/index.ts"
   },
   "files": [
     "dist"
