@@ -20,13 +20,13 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
-        "require": "./dist/index.cjs",
+        "require": "./dist/index.js",
         "default": "./dist/index.mjs"
       },
       "./hooks": {
         "types": "./dist/hooks/index.d.mts",
         "import": "./dist/hooks/index.mjs",
-        "require": "./dist/hooks/index.cjs",
+        "require": "./dist/hooks/index.js",
         "default": "./dist/hooks/index.mjs"
       }
     }

@@ -18,19 +18,19 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
-        "require": "./dist/index.cjs",
+        "require": "./dist/index.js",
         "default": "./dist/index.mjs"
       },
       "./standard": {
         "types": "./dist/adapters/standard/index.d.mts",
         "import": "./dist/adapters/standard/index.mjs",
-        "require": "./dist/adapters/standard/index.cjs",
+        "require": "./dist/adapters/standard/index.js",
         "default": "./dist/adapters/standard/index.mjs"
       },
       "./fetch": {
         "types": "./dist/adapters/fetch/index.d.mts",
         "import": "./dist/adapters/fetch/index.mjs",
-        "require": "./dist/adapters/fetch/index.cjs",
+        "require": "./dist/adapters/fetch/index.js",
         "default": "./dist/adapters/fetch/index.mjs"
       }
     }
