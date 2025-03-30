@@ -28,3 +28,5 @@ vitest.config.ts.timestamp-*
 # Common manual ignore files
 *.local
 *.pem
+
+.vscode/
