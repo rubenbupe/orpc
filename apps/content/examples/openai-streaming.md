@@ -10,9 +10,9 @@ This example shows how to integrate oRPC with the OpenAI Streaming API to build 
 ## Basic Example
 
 ```ts twoslash
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { os, RouterClient } from '@orpc/server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { os, RouterClient } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 // ---cut---
 import OpenAI from 'openai'

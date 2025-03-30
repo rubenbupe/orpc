@@ -1,4 +1,4 @@
-import type { ORPCError, ORPCErrorCode } from '@orpc/client'
+import type { ORPCError, ORPCErrorCode } from '@rubenbupe/orpc-client'
 import type { AnySchema, InferSchemaOutput, Schema, SchemaIssue } from './schema'
 
 export interface ValidationErrorOptions extends ErrorOptions {

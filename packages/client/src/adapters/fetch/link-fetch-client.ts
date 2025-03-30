@@ -1,8 +1,8 @@
-import type { StandardLazyResponse, StandardRequest } from '@orpc/standard-server'
-import type { ToFetchRequestOptions } from '@orpc/standard-server-fetch'
+import type { StandardLazyResponse, StandardRequest } from '@rubenbupe/orpc-standard-server'
+import type { ToFetchRequestOptions } from '@rubenbupe/orpc-standard-server-fetch'
 import type { ClientContext, ClientOptions } from '../../types'
 import type { StandardLinkClient } from '../standard'
-import { toFetchRequest, toStandardLazyResponse } from '@orpc/standard-server-fetch'
+import { toFetchRequest, toStandardLazyResponse } from '@rubenbupe/orpc-standard-server-fetch'
 
 export interface LinkFetchClientOptions<T extends ClientContext> extends ToFetchRequestOptions {
   fetch?: (

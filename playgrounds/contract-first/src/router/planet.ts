@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/server'
+import { ORPCError } from '@rubenbupe/orpc-server'
 import { authed, pub } from '../orpc'
 import { retry } from '../middlewares/retry'
 

@@ -2,7 +2,7 @@ import type { ErrorMap } from './error'
 import type { Meta } from './meta'
 import type { Route } from './route'
 import type { AnySchema } from './schema'
-import { isORPCErrorStatus } from '@orpc/client'
+import { isORPCErrorStatus } from '@rubenbupe/orpc-client'
 
 export interface ContractProcedureDef<
   TInputSchema extends AnySchema,

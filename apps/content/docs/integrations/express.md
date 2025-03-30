@@ -12,7 +12,7 @@ description: Seamlessly integrate oRPC with Express.js
 ```ts
 import express from 'express'
 import cors from 'cors'
-import { RPCHandler } from '@orpc/server/node'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
 
 const app = express()
 

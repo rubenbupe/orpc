@@ -1,4 +1,4 @@
-import type { ORPCError } from '@orpc/client'
+import type { ORPCError } from '@rubenbupe/orpc-client'
 import type { outputSchema } from '../tests/shared'
 import type { MergedErrorMap, ORPCErrorFromErrorMap } from './error'
 import type { InferSchemaOutput } from './schema'

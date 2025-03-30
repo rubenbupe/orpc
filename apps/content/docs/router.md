@@ -12,7 +12,7 @@ Routers in oRPC are simple, nestable objects composed of procedures. They can al
 Routers are defined as plain JavaScript objects where each key corresponds to a procedure. For example:
 
 ```ts
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 
 const ping = os.handler(async () => 'ping')
 const pong = os.handler(async () => 'pong')
@@ -95,7 +95,7 @@ Every [procedure](/docs/procedure) is also a router, so you can apply these util
 ```ts twoslash
 import type { router } from './shared/planet'
 // ---cut---
-import type { InferRouterInputs } from '@orpc/server'
+import type { InferRouterInputs } from '@rubenbupe/orpc-server'
 
 export type Inputs = InferRouterInputs<typeof router>
 
@@ -109,7 +109,7 @@ Infers the expected input types for each procedure in the router.
 ```ts twoslash
 import type { router } from './shared/planet'
 // ---cut---
-import type { InferRouterOutputs } from '@orpc/server'
+import type { InferRouterOutputs } from '@rubenbupe/orpc-server'
 
 export type Outputs = InferRouterOutputs<typeof router>
 
@@ -123,7 +123,7 @@ Infers the expected output types for each procedure in the router.
 ```ts twoslash
 import type { router } from './shared/planet'
 // ---cut---
-import type { InferRouterInitialContexts } from '@orpc/server'
+import type { InferRouterInitialContexts } from '@rubenbupe/orpc-server'
 
 export type InitialContexts = InferRouterInitialContexts<typeof router>
 
@@ -137,7 +137,7 @@ Infers the [initial context](/docs/context#initial-context) types defined for ea
 ```ts twoslash
 import type { router } from './shared/planet'
 // ---cut---
-import type { InferRouterCurrentContexts } from '@orpc/server'
+import type { InferRouterCurrentContexts } from '@rubenbupe/orpc-server'
 
 export type CurrentContexts = InferRouterCurrentContexts<typeof router>
 

@@ -1,5 +1,5 @@
 import type { JSONSchema, ObjectSchema } from './schema'
-import { isObject } from '@orpc/shared'
+import { isObject } from '@rubenbupe/orpc-shared'
 import { filterSchemaBranches, isAnySchema, isFileSchema, isObjectSchema, separateObjectSchema } from './schema-utils'
 
 it('isFileSchema', () => {

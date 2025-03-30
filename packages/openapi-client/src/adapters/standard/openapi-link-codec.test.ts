@@ -1,5 +1,5 @@
-import * as ClientModule from '@orpc/client'
-import * as StandardServer from '@orpc/standard-server'
+import * as ClientModule from '@rubenbupe/orpc-client'
+import * as StandardServer from '@rubenbupe/orpc-standard-server'
 import { oc } from '../../../../contract/src/builder'
 import { StandardBracketNotationSerializer } from './bracket-notation'
 import { StandardOpenAPIJsonSerializer } from './openapi-json-serializer'

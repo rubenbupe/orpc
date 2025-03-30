@@ -1,9 +1,9 @@
-import type { AnySchema, ContractProcedureDef, ErrorMap, Meta } from '@orpc/contract'
-import type { Promisable } from '@orpc/shared'
+import type { AnySchema, ContractProcedureDef, ErrorMap, Meta } from '@rubenbupe/orpc-contract'
+import type { Promisable } from '@rubenbupe/orpc-shared'
 import type { Context } from './context'
 import type { ORPCErrorConstructorMap } from './error'
 import type { AnyMiddleware } from './middleware'
-import { isContractProcedure } from '@orpc/contract'
+import { isContractProcedure } from '@rubenbupe/orpc-contract'
 
 export interface ProcedureHandlerOptions<
   TCurrentContext extends Context,

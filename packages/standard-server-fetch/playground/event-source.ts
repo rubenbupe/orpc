@@ -1,4 +1,4 @@
-import { isAsyncIteratorObject } from '@orpc/shared'
+import { isAsyncIteratorObject } from '@rubenbupe/orpc-shared'
 import { toStandardLazyRequest } from '../src/request'
 import { toFetchResponse } from '../src/response'
 import { serve } from '@hono/node-server'

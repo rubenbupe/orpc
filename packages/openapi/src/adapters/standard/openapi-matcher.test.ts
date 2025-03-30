@@ -1,4 +1,4 @@
-import { implement, lazy, os, Procedure, unlazy } from '@orpc/server'
+import { implement, lazy, os, Procedure, unlazy } from '@rubenbupe/orpc-server'
 import { router as contract } from '../../../../contract/tests/shared'
 import { ping, pong } from '../../../../server/tests/shared'
 import { StandardOpenAPIMatcher } from './openapi-matcher'

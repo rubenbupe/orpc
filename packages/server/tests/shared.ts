@@ -1,4 +1,4 @@
-import type { Meta, Schema } from '@orpc/contract'
+import type { Meta, Schema } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { Context } from '../src'
 import { ping as pingContract, pong as pongContract } from '../../contract/tests/shared'

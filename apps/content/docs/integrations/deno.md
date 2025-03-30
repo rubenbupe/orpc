@@ -10,8 +10,8 @@ description: Integrate oRPC with Deno's built-in HTTP server
 ## Basic
 
 ```ts
-import { RPCHandler } from '@orpc/server/fetch'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [

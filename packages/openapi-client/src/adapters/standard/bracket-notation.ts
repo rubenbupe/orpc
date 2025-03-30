@@ -1,4 +1,4 @@
-import { isObject, type Segment } from '@orpc/shared'
+import { isObject, type Segment } from '@rubenbupe/orpc-shared'
 
 export type StandardBracketNotationSerialized = [string, unknown][]
 

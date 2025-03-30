@@ -1,5 +1,5 @@
-import type { HTTPPath } from '@orpc/client'
-import type { AnySchema, ContractRouter, ErrorMap, InferSchemaInput, InferSchemaOutput, MergedErrorMap, Meta, Route, Schema } from '@orpc/contract'
+import type { HTTPPath } from '@rubenbupe/orpc-client'
+import type { AnySchema, ContractRouter, ErrorMap, InferSchemaInput, InferSchemaOutput, MergedErrorMap, Meta, Route, Schema } from '@rubenbupe/orpc-contract'
 import type { BuilderDef } from './builder'
 import type { Context, MergedCurrentContext, MergedInitialContext } from './context'
 import type { ORPCErrorConstructorMap } from './error'

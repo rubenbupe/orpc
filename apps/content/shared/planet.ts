@@ -1,7 +1,7 @@
 import { z } from 'zod'
-import { oc } from '@orpc/contract'
-import type { RouterClient } from '@orpc/server'
-import { implement } from '@orpc/server'
+import { oc } from '@rubenbupe/orpc-contract'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import { implement } from '@rubenbupe/orpc-server'
 import type { IncomingHttpHeaders } from 'node:http'
 
 export const PlanetSchema = z.object({

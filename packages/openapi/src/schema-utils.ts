@@ -1,5 +1,5 @@
 import type { FileSchema, JSONSchema, ObjectSchema } from './schema'
-import { isObject } from '@orpc/shared'
+import { isObject } from '@rubenbupe/orpc-shared'
 import { LOGIC_KEYWORDS } from './schema'
 
 /**

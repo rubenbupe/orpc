@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/react",
+  "name": "@rubenbupe/orpc-react",
   "type": "module",
   "version": "0.0.0",
   "license": "MIT",
@@ -20,11 +20,13 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       },
       "./hooks": {
         "types": "./dist/hooks/index.d.mts",
         "import": "./dist/hooks/index.mjs",
+        "require": "./dist/hooks/index.cjs",
         "default": "./dist/hooks/index.mjs"
       }
     }
@@ -45,11 +47,11 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@orpc/client": "workspace:*",
-    "@orpc/contract": "workspace:*",
-    "@orpc/openapi-client": "workspace:*",
-    "@orpc/server": "workspace:*",
-    "@orpc/shared": "workspace:*"
+    "@rubenbupe/orpc-client": "workspace:*",
+    "@rubenbupe/orpc-contract": "workspace:*",
+    "@rubenbupe/orpc-openapi-client": "workspace:*",
+    "@rubenbupe/orpc-server": "workspace:*",
+    "@rubenbupe/orpc-shared": "workspace:*"
   },
   "devDependencies": {
     "react": "^19.1.0",

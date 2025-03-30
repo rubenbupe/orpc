@@ -1,4 +1,4 @@
-import { oz } from '@orpc/zod'
+import { oz } from '@rubenbupe/orpc-zod'
 import { z } from 'zod'
 import { UserSchema } from './user'
 

@@ -1,9 +1,9 @@
-import type { ORPCError } from '@orpc/client'
-import type { StandardRPCSerializer } from '@orpc/client/standard'
-import type { StandardBody, StandardLazyRequest, StandardResponse } from '@orpc/standard-server'
+import type { ORPCError } from '@rubenbupe/orpc-client'
+import type { StandardRPCSerializer } from '@rubenbupe/orpc-client/standard'
+import type { StandardBody, StandardLazyRequest, StandardResponse } from '@rubenbupe/orpc-standard-server'
 import type { AnyProcedure } from '../../procedure'
 import type { StandardCodec, StandardParams } from './types'
-import { parseEmptyableJSON } from '@orpc/shared'
+import { parseEmptyableJSON } from '@rubenbupe/orpc-shared'
 
 export class StandardRPCCodec implements StandardCodec {
   constructor(

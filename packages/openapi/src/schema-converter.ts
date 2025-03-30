@@ -1,4 +1,4 @@
-import type { AnySchema } from '@orpc/contract'
+import type { AnySchema } from '@rubenbupe/orpc-contract'
 import type { JSONSchema } from './schema'
 
 export interface SchemaConvertOptions {

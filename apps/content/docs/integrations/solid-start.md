@@ -13,7 +13,7 @@ description: Integrate oRPC with SolidStart
 
 ```ts [src/routes/rpc/[...rest].ts]
 import type { APIEvent } from '@solidjs/start/server'
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 
 const handler = new RPCHandler(router)
 

@@ -1,4 +1,4 @@
-import type { StandardHeaders, StandardResponse } from '@orpc/standard-server'
+import type { StandardHeaders, StandardResponse } from '@rubenbupe/orpc-standard-server'
 import type { ToNodeHttpBodyOptions } from './body'
 import type { NodeHttpResponse } from './types'
 import { toNodeHttpBody } from './body'

@@ -1,4 +1,4 @@
-import { isContractProcedure } from '@orpc/contract'
+import { isContractProcedure } from '@rubenbupe/orpc-contract'
 import { ping } from '../tests/shared'
 import { isProcedure } from './procedure'
 

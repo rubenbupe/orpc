@@ -12,23 +12,23 @@ OpenAPILink enables communication with an [OpenAPIHandler](/docs/openapi/openapi
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/openapi-client@latest
+npm install @rubenbupe/orpc-openapi-client@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/openapi-client@latest
+yarn add @rubenbupe/orpc-openapi-client@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/openapi-client@latest
+pnpm add @rubenbupe/orpc-openapi-client@latest
 ```
 
 ```sh [bun]
-bun add @orpc/openapi-client@latest
+bun add @rubenbupe/orpc-openapi-client@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/openapi-client@latest
+deno install npm:@rubenbupe/orpc-openapi-client@latest
 ```
 
 :::
@@ -44,10 +44,10 @@ A normal [router](/docs/router) works as a contract router as long as it does no
 ```ts twoslash
 import { contract } from './shared/planet'
 // ---cut---
-import type { JsonifiedClient } from '@orpc/openapi-client'
-import type { ContractRouterClient } from '@orpc/contract'
-import { createORPCClient } from '@orpc/client'
-import { OpenAPILink } from '@orpc/openapi-client/fetch'
+import type { JsonifiedClient } from '@rubenbupe/orpc-openapi-client'
+import type { ContractRouterClient } from '@rubenbupe/orpc-contract'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { OpenAPILink } from '@rubenbupe/orpc-openapi-client/fetch'
 
 const link = new OpenAPILink(contract, {
   url: 'http://localhost:3000/api',
@@ -96,10 +96,10 @@ Client context lets you pass extra information when calling procedures and dynam
 ```ts twoslash
 import { contract } from './shared/planet'
 // ---cut---
-import type { JsonifiedClient } from '@orpc/openapi-client'
-import type { ContractRouterClient } from '@orpc/contract'
-import { createORPCClient } from '@orpc/client'
-import { OpenAPILink } from '@orpc/openapi-client/fetch'
+import type { JsonifiedClient } from '@rubenbupe/orpc-openapi-client'
+import type { ContractRouterClient } from '@rubenbupe/orpc-contract'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { OpenAPILink } from '@rubenbupe/orpc-openapi-client/fetch'
 
 interface ClientContext {
   something?: string

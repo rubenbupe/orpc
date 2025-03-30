@@ -1,5 +1,5 @@
-import { isAsyncIteratorObject } from '@orpc/shared'
-import { ErrorEvent, getEventMeta, withEventMeta } from '@orpc/standard-server'
+import { isAsyncIteratorObject } from '@rubenbupe/orpc-shared'
+import { ErrorEvent, getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'
 import { toEventIterator, toEventStream } from './event-iterator'
 
 describe('toEventIterator', () => {

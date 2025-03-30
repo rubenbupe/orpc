@@ -1,5 +1,5 @@
-import { isTypescriptObject } from '@orpc/shared'
-import { getEventMeta, withEventMeta } from '@orpc/standard-server'
+import { isTypescriptObject } from '@rubenbupe/orpc-shared'
+import { getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'
 
 export function mapEventIterator<TYield, TReturn, TNext, TMap = TYield | TReturn>(
   iterator: AsyncIterator<TYield, TReturn, TNext>,

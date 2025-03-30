@@ -1,4 +1,4 @@
-import type { MergedErrorMap, Meta, Schema } from '@orpc/contract'
+import type { MergedErrorMap, Meta, Schema } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { CurrentContext, InitialContext, router } from '../tests/shared'
 import type { Context, MergedInitialContext } from './context'

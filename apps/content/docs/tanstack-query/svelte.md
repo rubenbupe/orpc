@@ -12,23 +12,23 @@ This guide shows how to integrate oRPC with Tanstack Query for Svelte. For an in
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/svelte-query@latest @tanstack/svelte-query@latest
+npm install @rubenbupe/orpc-svelte-query@latest @tanstack/svelte-query@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/svelte-query@latest @tanstack/svelte-query@latest
+yarn add @rubenbupe/orpc-svelte-query@latest @tanstack/svelte-query@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/svelte-query@latest @tanstack/svelte-query@latest
+pnpm add @rubenbupe/orpc-svelte-query@latest @tanstack/svelte-query@latest
 ```
 
 ```sh [bun]
-bun add @orpc/svelte-query@latest @tanstack/svelte-query@latest
+bun add @rubenbupe/orpc-svelte-query@latest @tanstack/svelte-query@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/svelte-query@latest npm:@tanstack/svelte-query@latest
+deno install npm:@rubenbupe/orpc-svelte-query@latest npm:@tanstack/svelte-query@latest
 ```
 
 :::
@@ -39,10 +39,10 @@ Before you begin, ensure you have already configured a [server-side client](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router>
 // ---cut---
-import { createORPCSvelteQueryUtils } from '@orpc/svelte-query'
+import { createORPCSvelteQueryUtils } from '@rubenbupe/orpc-svelte-query'
 
 export const orpc = createORPCSvelteQueryUtils(client)
 
@@ -71,8 +71,8 @@ To create reactive queries, use Svelte's legacy `derived` API from `svelte/store
 
 ```ts twoslash
 import type { router } from './shared/planet'
-import type { RouterClient } from '@orpc/server'
-import type { RouterUtils } from '@orpc/svelte-query'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import type { RouterUtils } from '@rubenbupe/orpc-svelte-query'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 declare const condition: boolean
 // ---cut---

@@ -1,4 +1,4 @@
-import type { Promisable } from '@orpc/shared'
+import type { Promisable } from '@rubenbupe/orpc-shared'
 import type { ClientContext, ClientLink, ClientOptions } from './types'
 
 /**

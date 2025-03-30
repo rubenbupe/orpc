@@ -1,9 +1,9 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
-import { sendStandardResponse, toStandardLazyRequest } from '@orpc/standard-server-node'
+import { sendStandardResponse, toStandardLazyRequest } from '@rubenbupe/orpc-standard-server-node'
 import request from 'supertest'
 import { NodeHttpHandler } from './handler'
 
-vi.mock('@orpc/standard-server-node', () => ({
+vi.mock('@rubenbupe/orpc-standard-server-node', () => ({
   toStandardLazyRequest: vi.fn(),
   sendStandardResponse: vi.fn(),
 }))

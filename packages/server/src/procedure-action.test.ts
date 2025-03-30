@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/client'
+import { ORPCError } from '@rubenbupe/orpc-client'
 import { createActionableClient } from './procedure-action'
 
 describe('createActionableClient', () => {

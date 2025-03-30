@@ -41,23 +41,23 @@ You can extend the list of supported types by [creating a custom serializer](/do
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/openapi@latest
+npm install @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/openapi@latest
+yarn add @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/openapi@latest
+pnpm add @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [bun]
-bun add @orpc/openapi@latest
+bun add @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/openapi@latest
+deno install npm:@rubenbupe/orpc-openapi@latest
 ```
 
 :::
@@ -65,9 +65,9 @@ deno install npm:@orpc/openapi@latest
 ## Setup and Integration
 
 ```ts
-import { OpenAPIHandler } from '@orpc/openapi/fetch' // or '@orpc/server/node'
-import { CORSPlugin } from '@orpc/server/plugins'
-import { onError } from '@orpc/server'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch' // or '@rubenbupe/orpc-server/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
+import { onError } from '@rubenbupe/orpc-server'
 
 const handler = new OpenAPIHandler(router, {
   plugins: [new CORSPlugin()],

@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/contract'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { safe } from '../src'
 import { orpc } from './helpers'
 

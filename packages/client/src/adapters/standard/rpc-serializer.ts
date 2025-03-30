@@ -1,6 +1,6 @@
 import type { StandardRPCJsonSerializer } from './rpc-json-serializer'
-import { isAsyncIteratorObject, stringifyJSON } from '@orpc/shared'
-import { ErrorEvent } from '@orpc/standard-server'
+import { isAsyncIteratorObject, stringifyJSON } from '@rubenbupe/orpc-shared'
+import { ErrorEvent } from '@rubenbupe/orpc-standard-server'
 import { ORPCError, toORPCError } from '../../error'
 import { mapEventIterator } from '../../event-iterator'
 

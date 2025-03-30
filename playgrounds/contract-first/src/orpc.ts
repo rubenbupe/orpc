@@ -1,6 +1,6 @@
 import type { z } from 'zod'
 import type { UserSchema } from './schemas/user'
-import { implement, ORPCError } from '@orpc/server'
+import { implement, ORPCError } from '@rubenbupe/orpc-server'
 import { dbProviderMiddleware } from './middlewares/db'
 import { contract } from './contract'
 

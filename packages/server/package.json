@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/server",
+  "name": "@rubenbupe/orpc-server",
   "type": "module",
   "version": "1.0.0-beta.4",
   "license": "MIT",
@@ -18,36 +18,43 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       },
       "./plugins": {
         "types": "./dist/plugins/index.d.mts",
         "import": "./dist/plugins/index.mjs",
+        "require": "./dist/plugins/index.cjs",
         "default": "./dist/plugins/index.mjs"
       },
       "./standard": {
         "types": "./dist/adapters/standard/index.d.mts",
         "import": "./dist/adapters/standard/index.mjs",
+        "require": "./dist/adapters/standard/index.cjs",
         "default": "./dist/adapters/standard/index.mjs"
       },
       "./fetch": {
         "types": "./dist/adapters/fetch/index.d.mts",
         "import": "./dist/adapters/fetch/index.mjs",
+        "require": "./dist/adapters/fetch/index.cjs",
         "default": "./dist/adapters/fetch/index.mjs"
       },
       "./hono": {
         "types": "./dist/adapters/hono/index.d.mts",
         "import": "./dist/adapters/hono/index.mjs",
+        "require": "./dist/adapters/hono/index.cjs",
         "default": "./dist/adapters/hono/index.mjs"
       },
       "./next": {
         "types": "./dist/adapters/next/index.d.mts",
         "import": "./dist/adapters/next/index.mjs",
+        "require": "./dist/adapters/next/index.cjs",
         "default": "./dist/adapters/next/index.mjs"
       },
       "./node": {
         "types": "./dist/adapters/node/index.d.mts",
         "import": "./dist/adapters/node/index.mjs",
+        "require": "./dist/adapters/node/index.cjs",
         "default": "./dist/adapters/node/index.mjs"
       }
     }
@@ -74,12 +81,12 @@
     "next": ">=14.0.0"
   },
   "dependencies": {
-    "@orpc/client": "workspace:*",
-    "@orpc/contract": "workspace:*",
-    "@orpc/shared": "workspace:*",
-    "@orpc/standard-server": "workspace:*",
-    "@orpc/standard-server-fetch": "workspace:*",
-    "@orpc/standard-server-node": "workspace:*"
+    "@rubenbupe/orpc-client": "workspace:*",
+    "@rubenbupe/orpc-contract": "workspace:*",
+    "@rubenbupe/orpc-shared": "workspace:*",
+    "@rubenbupe/orpc-standard-server": "workspace:*",
+    "@rubenbupe/orpc-standard-server-fetch": "workspace:*",
+    "@rubenbupe/orpc-standard-server-node": "workspace:*"
   },
   "devDependencies": {
     "supertest": "^7.0.0"

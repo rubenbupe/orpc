@@ -10,9 +10,9 @@ The Response Headers Plugin allows you to set response headers in oRPC. It injec
 ## Context Setup
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 // ---cut---
-import { ResponseHeadersPluginContext } from '@orpc/server/plugins'
+import { ResponseHeadersPluginContext } from '@rubenbupe/orpc-server/plugins'
 
 interface ORPCContext extends ResponseHeadersPluginContext {}
 
@@ -36,7 +36,7 @@ This allows procedures to run safely even when `ResponseHeadersPlugin` is not us
 ## Handler Setup
 
 ```ts
-import { ResponseHeadersPlugin } from '@orpc/server/plugins'
+import { ResponseHeadersPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [

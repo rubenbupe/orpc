@@ -1,5 +1,5 @@
-import type { AnySchema } from '@orpc/contract'
-import type { ConditionalSchemaConverter, JSONSchema, SchemaConvertOptions } from '@orpc/openapi'
+import type { AnySchema } from '@rubenbupe/orpc-contract'
+import type { ConditionalSchemaConverter, JSONSchema, SchemaConvertOptions } from '@rubenbupe/orpc-openapi'
 import type {
   EnumLike,
   KeySchema,
@@ -32,7 +32,7 @@ import type {
   ZodUnion,
   ZodUnionOptions,
 } from 'zod'
-import { JSONSchemaFormat } from '@orpc/openapi'
+import { JSONSchemaFormat } from '@rubenbupe/orpc-openapi'
 import escapeStringRegexp from 'escape-string-regexp'
 import { ZodFirstPartyTypeKind } from 'zod'
 import { getCustomJsonSchema } from './custom-json-schema'

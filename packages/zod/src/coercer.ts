@@ -1,5 +1,5 @@
-import type { Context } from '@orpc/server'
-import type { StandardHandlerOptions, StandardHandlerPlugin } from '@orpc/server/standard'
+import type { Context } from '@rubenbupe/orpc-server'
+import type { StandardHandlerOptions, StandardHandlerPlugin } from '@rubenbupe/orpc-server/standard'
 import type {
   EnumLike,
   ZodArray,
@@ -24,7 +24,7 @@ import type {
   ZodTypeAny,
   ZodUnion,
 } from 'zod'
-import { guard, isObject } from '@orpc/shared'
+import { guard, isObject } from '@rubenbupe/orpc-shared'
 import { ZodFirstPartyTypeKind } from 'zod'
 import { getCustomZodDef } from './schemas/base'
 

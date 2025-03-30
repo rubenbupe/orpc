@@ -1,6 +1,6 @@
 import type { AnySchema, Schema } from './schema'
-import { mapEventIterator, ORPCError } from '@orpc/client'
-import { isAsyncIteratorObject } from '@orpc/shared'
+import { mapEventIterator, ORPCError } from '@rubenbupe/orpc-client'
+import { isAsyncIteratorObject } from '@rubenbupe/orpc-shared'
 import { ValidationError } from './error'
 
 const EVENT_ITERATOR_DETAILS_SYMBOL = Symbol('ORPC_EVENT_ITERATOR_DETAILS')

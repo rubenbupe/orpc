@@ -1,5 +1,5 @@
-import type { RouterClient } from '@orpc/server'
-import { RPCHandler } from '@orpc/server/fetch'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 import { router } from '../../server/tests/shared'
 import { createORPCClient } from '../src'
 import { RPCLink } from '../src/adapters/fetch'

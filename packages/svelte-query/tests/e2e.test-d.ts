@@ -1,5 +1,5 @@
 import type { InfiniteData } from '@tanstack/svelte-query'
-import { isDefinedError } from '@orpc/client'
+import { isDefinedError } from '@rubenbupe/orpc-client'
 import { createInfiniteQuery, createMutation, createQueries, createQuery } from '@tanstack/svelte-query'
 import { get } from 'svelte/store'
 import { orpc as client } from '../../client/tests/shared'

@@ -1,5 +1,5 @@
-import type { AnySchema, ErrorMap, Meta } from '@orpc/contract'
-import type { MaybeOptionalOptions, Promisable } from '@orpc/shared'
+import type { AnySchema, ErrorMap, Meta } from '@rubenbupe/orpc-contract'
+import type { MaybeOptionalOptions, Promisable } from '@rubenbupe/orpc-shared'
 import type { Context } from './context'
 import type { ORPCErrorConstructorMap } from './error'
 import type { Procedure } from './procedure'

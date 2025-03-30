@@ -1,5 +1,5 @@
-import { ORPCError } from '@orpc/contract'
-import { ErrorEvent, getEventMeta, withEventMeta } from '@orpc/standard-server'
+import { ORPCError } from '@rubenbupe/orpc-contract'
+import { ErrorEvent, getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'
 import { StandardBracketNotationSerializer } from './bracket-notation'
 import { StandardOpenAPIJsonSerializer } from './openapi-json-serializer'
 import { StandardOpenAPISerializer } from './openapi-serializer'

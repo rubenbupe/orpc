@@ -14,7 +14,7 @@ You can integrate oRPC handlers with TanStack Start using its [API Routes](https
 ::: code-group
 
 ```ts [app/routes/api/rpc.$.ts]
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 import { createAPIFileRoute } from '@tanstack/start/api'
 
 const handler = new RPCHandler(router)
@@ -88,7 +88,7 @@ function Home() {
 ```
 
 ```ts [src/lib/contract.ts]
-import { oc } from '@orpc/contract'
+import { oc } from '@rubenbupe/orpc-contract'
 import { z } from 'zod'
 
 export const Count = z.object({
@@ -122,9 +122,9 @@ During server-side rendering, the server (not the browser) calls the route loade
 If your handlers run on a separate server or if you're comfortable with multiple network requests, you can reuse your client-side client instance:
 
 ```ts [src/lib/client.ts]
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { ContractRouterClient } from '@orpc/contract'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { ContractRouterClient } from '@rubenbupe/orpc-contract'
 import { getHeaders } from '@tanstack/react-start/server'
 import { contract } from '@/lib/contract'
 

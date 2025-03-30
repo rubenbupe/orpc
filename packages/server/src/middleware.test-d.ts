@@ -1,4 +1,4 @@
-import type { AnySchema, ErrorMap } from '@orpc/contract'
+import type { AnySchema, ErrorMap } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta } from '../../contract/tests/shared'
 import type { Context } from './context'
 import type { ORPCErrorConstructorMap } from './error'

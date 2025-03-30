@@ -20,8 +20,8 @@ export * from './router-client'
 export * from './router-hidden'
 export * from './router-utils'
 
-export { isDefinedError, ORPCError, safe } from '@orpc/client'
-export { eventIterator, type, ValidationError } from '@orpc/contract'
+export { isDefinedError, ORPCError, safe } from '@rubenbupe/orpc-client'
+export { eventIterator, type, ValidationError } from '@rubenbupe/orpc-contract'
 export type {
   ContractProcedure,
   ContractProcedureDef,
@@ -35,6 +35,6 @@ export type {
   OutputStructure,
   Route,
   Schema,
-} from '@orpc/contract'
-export { onError, onFinish, onStart, onSuccess } from '@orpc/shared'
-export { getEventMeta, withEventMeta } from '@orpc/standard-server'
+} from '@rubenbupe/orpc-contract'
+export { onError, onFinish, onStart, onSuccess } from '@rubenbupe/orpc-shared'
+export { getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'

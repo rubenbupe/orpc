@@ -1,4 +1,4 @@
-import { enhanceRoute } from '@orpc/contract'
+import { enhanceRoute } from '@rubenbupe/orpc-contract'
 import { contract, ping, pingMiddleware, pong, router } from '../tests/shared'
 import { getLazyMeta, isLazy, unlazy } from './lazy'
 import { setHiddenRouterContract } from './router-hidden'

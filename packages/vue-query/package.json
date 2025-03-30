@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/vue-query",
+  "name": "@rubenbupe/orpc-vue-query",
   "type": "module",
   "version": "1.0.0-beta.4",
   "license": "MIT",
@@ -21,6 +21,7 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       }
     }
@@ -37,11 +38,11 @@
     "type:check": "tsc -b"
   },
   "peerDependencies": {
-    "@orpc/client": "workspace:*",
+    "@rubenbupe/orpc-client": "workspace:*",
     "@tanstack/vue-query": ">=5.50.0",
     "vue": ">=3.3.0"
   },
   "dependencies": {
-    "@orpc/shared": "workspace:*"
+    "@rubenbupe/orpc-shared": "workspace:*"
   }
 }

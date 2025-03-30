@@ -2,9 +2,9 @@
 
 import { pub } from '@/orpc'
 import { z } from 'zod'
-import { createFormAction } from '@orpc/react'
+import { createFormAction } from '@rubenbupe/orpc-react'
 import { redirect } from 'next/navigation'
-import { onSuccess } from '@orpc/client'
+import { onSuccess } from '@rubenbupe/orpc-client'
 
 export const getting = pub
   .input(z.object({

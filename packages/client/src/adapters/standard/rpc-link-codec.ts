@@ -1,8 +1,8 @@
 import type { ClientContext, ClientOptions, HTTPMethod } from '../../types'
 import type { StandardRPCSerializer } from './rpc-serializer'
 import type { StandardLinkCodec } from './types'
-import { isAsyncIteratorObject, stringifyJSON, value, type Value } from '@orpc/shared'
-import { mergeStandardHeaders, type StandardHeaders, type StandardLazyResponse, type StandardRequest } from '@orpc/standard-server'
+import { isAsyncIteratorObject, stringifyJSON, value, type Value } from '@rubenbupe/orpc-shared'
+import { mergeStandardHeaders, type StandardHeaders, type StandardLazyResponse, type StandardRequest } from '@rubenbupe/orpc-standard-server'
 import { isORPCErrorStatus, ORPCError } from '../../error'
 import { toHttpPath } from './utils'
 

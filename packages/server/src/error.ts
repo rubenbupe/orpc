@@ -1,7 +1,7 @@
-import type { ORPCErrorCode, ORPCErrorOptions } from '@orpc/client'
-import type { ErrorMap, ErrorMapItem, InferSchemaInput } from '@orpc/contract'
-import type { MaybeOptionalOptions } from '@orpc/shared'
-import { fallbackORPCErrorStatus, ORPCError } from '@orpc/client'
+import type { ORPCErrorCode, ORPCErrorOptions } from '@rubenbupe/orpc-client'
+import type { ErrorMap, ErrorMapItem, InferSchemaInput } from '@rubenbupe/orpc-contract'
+import type { MaybeOptionalOptions } from '@rubenbupe/orpc-shared'
+import { fallbackORPCErrorStatus, ORPCError } from '@rubenbupe/orpc-client'
 
 export type ORPCErrorConstructorMapItemOptions<TData> = Omit<ORPCErrorOptions<TData>, 'defined' | 'status'>
 

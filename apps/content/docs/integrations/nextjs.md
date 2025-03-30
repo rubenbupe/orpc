@@ -16,7 +16,7 @@ oRPC also supports [Server Action](/docs/server-action) out-of-the-box.
 ::: code-group
 
 ```ts [app/rpc/[[...rest]].ts]
-import { RPCHandler, serve } from '@orpc/server/next'
+import { RPCHandler, serve } from '@rubenbupe/orpc-server/next'
 
 const handler = new RPCHandler(router)
 
@@ -39,7 +39,7 @@ The `handler` can be any supported oRPC handler, such as [RPCHandler](/docs/rpc-
 ::: code-group
 
 ```ts [pages/rpc/[[...rest]].ts]
-import { RPCHandler } from '@orpc/server/node'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
 
 const handler = new RPCHandler(router)
 

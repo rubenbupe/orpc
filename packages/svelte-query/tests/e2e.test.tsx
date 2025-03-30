@@ -1,5 +1,5 @@
-import { isDefinedError } from '@orpc/client'
-import { ORPCError } from '@orpc/contract'
+import { isDefinedError } from '@rubenbupe/orpc-client'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { createInfiniteQuery, createMutation, createQuery } from '@tanstack/svelte-query'
 import { get } from 'svelte/store'
 import { pingHandler } from '../../server/tests/shared'

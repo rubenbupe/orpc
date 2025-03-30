@@ -1,5 +1,5 @@
-import type { ClientContext } from '@orpc/client'
-import type { SetOptional } from '@orpc/shared'
+import type { ClientContext } from '@rubenbupe/orpc-client'
+import type { SetOptional } from '@rubenbupe/orpc-shared'
 import type { QueryFunctionContext, QueryKey, UseInfiniteQueryOptions, UseMutationOptions, UseQueryOptions } from '@tanstack/react-query'
 
 export type QueryOptionsIn<TClientContext extends ClientContext, TInput, TOutput, TError extends Error, TSelectData> =

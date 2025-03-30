@@ -1,5 +1,5 @@
-import type { Client, ClientContext } from '@orpc/client'
-import type { MaybeOptionalOptions } from '@orpc/shared'
+import type { Client, ClientContext } from '@rubenbupe/orpc-client'
+import type { MaybeOptionalOptions } from '@rubenbupe/orpc-shared'
 import type { InfiniteData } from '@tanstack/react-query'
 import type { InfiniteOptionsBase, InfiniteOptionsIn, MutationOptions, MutationOptionsIn, QueryOptionsBase, QueryOptionsIn } from './types'
 import { buildKey } from './key'

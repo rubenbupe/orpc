@@ -1,8 +1,8 @@
-import type { Value } from '@orpc/shared'
+import type { Value } from '@rubenbupe/orpc-shared'
 import type { StandardLinkOptions, StandardLinkPlugin } from '../adapters/standard'
 import type { ClientOptions } from '../types'
-import { isAsyncIteratorObject, value } from '@orpc/shared'
-import { getEventMeta } from '@orpc/standard-server'
+import { isAsyncIteratorObject, value } from '@rubenbupe/orpc-shared'
+import { getEventMeta } from '@rubenbupe/orpc-standard-server'
 
 export interface ClientRetryPluginAttemptOptions {
   lastEventRetry: number | undefined

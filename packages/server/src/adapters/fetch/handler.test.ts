@@ -1,4 +1,4 @@
-import { toFetchResponse, toStandardLazyRequest } from '@orpc/standard-server-fetch'
+import { toFetchResponse, toStandardLazyRequest } from '@rubenbupe/orpc-standard-server-fetch'
 import { FetchHandler } from './handler'
 
 vi.mock('../standard', async origin => ({
@@ -6,7 +6,7 @@ vi.mock('../standard', async origin => ({
   StandardHandler: vi.fn(),
 }))
 
-vi.mock('@orpc/standard-server-fetch', async origin => ({
+vi.mock('@rubenbupe/orpc-standard-server-fetch', async origin => ({
   toStandardLazyRequest: vi.fn((await origin() as any).toStandardLazyRequest),
   toFetchResponse: vi.fn((await origin() as any).toFetchResponse),
 }))

@@ -1,5 +1,5 @@
-import { ORPCError, os } from '@orpc/server'
-import { RPCHandler } from '@orpc/server/fetch'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { supportedDataTypes } from '../../../tests/shared'
 import { RPCLink } from './rpc-link'

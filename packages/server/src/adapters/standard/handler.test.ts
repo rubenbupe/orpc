@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/contract'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { ping, router } from '../../../tests/shared'
 import { createProcedureClient } from '../../procedure-client'
 import { StandardHandler } from './handler'

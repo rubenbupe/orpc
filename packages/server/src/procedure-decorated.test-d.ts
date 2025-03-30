@@ -1,5 +1,5 @@
-import type { Client } from '@orpc/client'
-import type { AnySchema, ErrorFromErrorMap, ErrorMap, MergedErrorMap } from '@orpc/contract'
+import type { Client } from '@rubenbupe/orpc-client'
+import type { AnySchema, ErrorFromErrorMap, ErrorMap, MergedErrorMap } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { CurrentContext, InitialContext } from '../tests/shared'
 import type { Context } from './context'

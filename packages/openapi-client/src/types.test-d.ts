@@ -1,4 +1,4 @@
-import type { Client, ORPCError } from '@orpc/client'
+import type { Client, ORPCError } from '@rubenbupe/orpc-client'
 import type { JsonifiedClient, JsonifiedValue } from './types'
 
 describe('JsonifiedValue', () => {

@@ -1,12 +1,12 @@
 import { Readable } from 'node:stream'
-import { isTypescriptObject, parseEmptyableJSON, stringifyJSON } from '@orpc/shared'
+import { isTypescriptObject, parseEmptyableJSON, stringifyJSON } from '@rubenbupe/orpc-shared'
 import {
   encodeEventMessage,
   ErrorEvent,
   EventDecoderStream,
   getEventMeta,
   withEventMeta,
-} from '@orpc/standard-server'
+} from '@rubenbupe/orpc-standard-server'
 
 export function toEventIterator(
   stream: Readable,

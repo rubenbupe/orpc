@@ -1,4 +1,4 @@
-import type { Client, ClientContext } from '@orpc/client'
+import type { Client, ClientContext } from '@rubenbupe/orpc-client'
 import type { ErrorFromErrorMap, ErrorMap } from './error'
 import type { AnySchema, InferSchemaInput, InferSchemaOutput } from './schema'
 

@@ -1,5 +1,5 @@
-import { OpenAPIGenerator } from '@orpc/openapi'
-import { ZodToJsonSchemaConverter } from '@orpc/zod'
+import { OpenAPIGenerator } from '@rubenbupe/orpc-openapi'
+import { ZodToJsonSchemaConverter } from '@rubenbupe/orpc-zod'
 import type { APIEvent } from '@solidjs/start/server'
 import { router } from '~/router'
 

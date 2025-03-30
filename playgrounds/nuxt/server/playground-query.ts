@@ -1,5 +1,5 @@
 import { orpc } from '@/lib/orpc'
-import { isDefinedError } from '@orpc/client'
+import { isDefinedError } from '@rubenbupe/orpc-client'
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/vue-query'
 
 const query = useInfiniteQuery(

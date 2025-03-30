@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import request from 'supertest'
 import { OpenAPIHandler } from './openapi-handler'
 

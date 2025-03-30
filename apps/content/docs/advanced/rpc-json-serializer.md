@@ -14,7 +14,7 @@ Extend native types by creating your own `StandardRPCCustomJsonSerializer` and a
 1. **Define Your Custom Serializer**
 
    ```ts twoslash
-   import type { StandardRPCCustomJsonSerializer } from '@orpc/client/standard'
+   import type { StandardRPCCustomJsonSerializer } from '@rubenbupe/orpc-client/standard'
 
    export class User {
      constructor(
@@ -49,9 +49,9 @@ Extend native types by creating your own `StandardRPCCustomJsonSerializer` and a
 2. **Use Your Custom Serializer**
 
    ```ts twoslash
-   import type { StandardRPCCustomJsonSerializer } from '@orpc/client/standard'
-   import { RPCHandler } from '@orpc/server/fetch'
-   import { RPCLink } from '@orpc/client/fetch'
+   import type { StandardRPCCustomJsonSerializer } from '@rubenbupe/orpc-client/standard'
+   import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
+   import { RPCLink } from '@rubenbupe/orpc-client/fetch'
    declare const router: Record<never, never>
    declare const userSerializer: StandardRPCCustomJsonSerializer
    // ---cut---
@@ -72,7 +72,7 @@ You can override built-in types by matching their `type` with the [built-in type
 For example, oRPC represents `undefined` only in array items and ignores it in objects. To override this behavior:
 
 ```ts twoslash
-import { StandardRPCCustomJsonSerializer } from '@orpc/client/standard'
+import { StandardRPCCustomJsonSerializer } from '@rubenbupe/orpc-client/standard'
 
 export const undefinedSerializer: StandardRPCCustomJsonSerializer = {
   type: 3, // Match the built-in undefined type. [!code highlight]

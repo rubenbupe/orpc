@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [sveltekit()],
   ssr: {
     // Tell Vite not to externalize this package, so it will be processed by Vite.
-    noExternal: [/^@orpc\/.+/],
+    noExternal: [/^@rubenbupe\/.+/],
   },
 })

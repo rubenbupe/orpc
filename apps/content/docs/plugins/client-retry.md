@@ -13,11 +13,11 @@ Before you begin, please review the [Client Context](/docs/client/rpc-link#using
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { createORPCClient } from '@orpc/client'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
 // ---cut---
-import { RPCLink } from '@orpc/client/fetch'
-import { ClientRetryPlugin, ClientRetryPluginContext } from '@orpc/client/plugins'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { ClientRetryPlugin, ClientRetryPluginContext } from '@rubenbupe/orpc-client/plugins'
 
 interface ORPCClientContext extends ClientRetryPluginContext {}
 
@@ -37,8 +37,8 @@ const client: RouterClient<typeof router, ORPCClientContext> = createORPCClient(
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { ClientRetryPluginContext } from '@orpc/client/plugins'
-import { RouterClient } from '@orpc/server'
+import { ClientRetryPluginContext } from '@rubenbupe/orpc-client/plugins'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router, ClientRetryPluginContext>
 // ---cut---
 const planets = await client.planet.list({ limit: 10 }, {

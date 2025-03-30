@@ -28,7 +28,7 @@ Learn how to consume the event iterator on the client [here](/docs/client/event-
 oRPC includes a built‑in `eventIterator` helper that works with any [Standard Schema](https://github.com/standard-schema/standard-schema?tab=readme-ov-file#what-schema-libraries-implement-the-spec) library to validate events.
 
 ```ts
-import { eventIterator } from '@orpc/server'
+import { eventIterator } from '@rubenbupe/orpc-server'
 
 const example = os
   .output(eventIterator(z.object({ message: z.string() })))
@@ -45,7 +45,7 @@ const example = os
 Using the `withEventMeta` helper, you can attach [additional event meta](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#event_stream_format) (such as an event ID or a retry interval) to each event. On reconnect, oRPC passes the last event ID back to the handler so you can resume the stream appropriately.
 
 ```ts
-import { withEventMeta } from '@orpc/server'
+import { withEventMeta } from '@rubenbupe/orpc-server'
 
 const example = os
   .handler(async function* ({ input, lastEventId }) {

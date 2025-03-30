@@ -1,4 +1,4 @@
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 
 export function retry(options: { times: number }) {
   /**

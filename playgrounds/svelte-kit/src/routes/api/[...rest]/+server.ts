@@ -1,8 +1,8 @@
-import { OpenAPIHandler } from '@orpc/openapi/fetch'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch'
 import { router } from '../../../router'
-import { onError } from '@orpc/server'
+import { onError } from '@rubenbupe/orpc-server'
 import type { RequestHandler } from '@sveltejs/kit'
-import { ZodSmartCoercionPlugin } from '@orpc/zod'
+import { ZodSmartCoercionPlugin } from '@rubenbupe/orpc-zod'
 import '../../../polyfill'
 
 const handler = new OpenAPIHandler(router, {

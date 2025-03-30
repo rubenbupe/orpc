@@ -1,5 +1,5 @@
 import type { EventMessage } from './types'
-import { isTypescriptObject } from '@orpc/shared'
+import { isTypescriptObject } from '@rubenbupe/orpc-shared'
 import { assertEventComment, assertEventId, assertEventRetry } from './encoder'
 
 const EVENT_SOURCE_META_SYMBOL = Symbol('ORPC_EVENT_SOURCE_META')

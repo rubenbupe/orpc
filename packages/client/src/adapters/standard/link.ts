@@ -1,8 +1,8 @@
-import type { Interceptor } from '@orpc/shared'
-import type { StandardLazyResponse, StandardRequest } from '@orpc/standard-server'
+import type { Interceptor } from '@rubenbupe/orpc-shared'
+import type { StandardLazyResponse, StandardRequest } from '@rubenbupe/orpc-standard-server'
 import type { ClientContext, ClientLink, ClientOptions } from '../../types'
 import type { StandardLinkClient, StandardLinkCodec } from './types'
-import { intercept, toArray } from '@orpc/shared'
+import { intercept, toArray } from '@rubenbupe/orpc-shared'
 
 export class InvalidEventIteratorRetryResponse extends Error { }
 

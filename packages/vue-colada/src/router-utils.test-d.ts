@@ -1,5 +1,5 @@
-import type { ErrorFromErrorMap } from '@orpc/contract'
-import type { RouterClient } from '@orpc/server'
+import type { ErrorFromErrorMap } from '@rubenbupe/orpc-contract'
+import type { RouterClient } from '@rubenbupe/orpc-server'
 import type { baseErrorMap } from '../../contract/tests/shared'
 import type { router } from '../../server/tests/shared'
 import type { GeneralUtils } from './general-utils'

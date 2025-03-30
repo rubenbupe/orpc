@@ -1,6 +1,6 @@
 import type { OpenAPI } from './openapi'
-import { oc } from '@orpc/contract'
-import { os } from '@orpc/server'
+import { oc } from '@rubenbupe/orpc-contract'
+import { os } from '@rubenbupe/orpc-server'
 import { applyCustomOpenAPIOperation, customOpenAPIOperation, getCustomOpenAPIOperation } from './openapi-custom'
 
 it('customOpenAPIOperation & getCustomOpenAPIOperation', () => {

@@ -1,4 +1,4 @@
-import type { Client, ORPCError } from '@orpc/client'
+import type { Client, ORPCError } from '@rubenbupe/orpc-client'
 import type { baseErrorMap, inputSchema, outputSchema } from '../tests/shared'
 import type { ContractProcedureClient } from './procedure-client'
 

@@ -1,4 +1,4 @@
-import { eventIterator, oc } from '@orpc/contract'
+import { eventIterator, oc } from '@rubenbupe/orpc-contract'
 import { z } from 'zod'
 
 export const sse = oc

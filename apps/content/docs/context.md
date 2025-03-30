@@ -15,7 +15,7 @@ oRPC’s context mechanism provides a type-safe dependency injection pattern. It
 Initial context is used to define required dependencies (usually environment-specific) that must be passed when calling a procedure.
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 // ---cut---
 const base = os.$context<{ headers: Headers, env: { DB_URL: string } }>()
 
@@ -30,7 +30,7 @@ export const router = { getting }
 When calling that requires initial context, pass it explicitly:
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 
 const base = os.$context<{ headers: Headers, env: { DB_URL: string } }>()
 
@@ -41,7 +41,7 @@ const getting = base
 
 export const router = { getting }
 // ---cut---
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 
 const handler = new RPCHandler(router)
 
@@ -62,7 +62,7 @@ export default function fetch(request: Request) {
 Execution context is computed during the process lifecycle—usually via [middleware](/docs/middleware). It can be used independently or combined with initial context.
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 // ---cut---
 import { cookies, headers } from 'next/headers'
 
@@ -83,7 +83,7 @@ export const router = { getting }
 When using execution context, you don’t need to pass any context manually:
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import { cookies, headers } from 'next/headers'
 
 const base = os.use(async ({ next }) => next({
@@ -99,7 +99,7 @@ const getting = base.handler(async ({ context }) => {
 
 export const router = { getting }
 // ---cut---
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 
 const handler = new RPCHandler(router)
 
@@ -113,7 +113,7 @@ export default function fetch(request: Request) {
 Often you need both static and dynamic dependencies. Use initial context for environment-specific values (e.g., database URLs) and middleware (execution context) for runtime data (e.g., user authentication).
 
 ```ts twoslash
-import { ORPCError, os } from '@orpc/server'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
 // ---cut---
 const base = os.$context<{ headers: Headers, env: { DB_URL: string } }>()
 

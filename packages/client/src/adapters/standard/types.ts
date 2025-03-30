@@ -1,4 +1,4 @@
-import type { StandardLazyResponse, StandardRequest } from '@orpc/standard-server'
+import type { StandardLazyResponse, StandardRequest } from '@rubenbupe/orpc-standard-server'
 import type { ClientContext, ClientOptions } from '../../types'
 
 export interface StandardLinkCodec<T extends ClientContext> {

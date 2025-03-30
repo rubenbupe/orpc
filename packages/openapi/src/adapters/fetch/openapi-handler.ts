@@ -1,9 +1,9 @@
-import type { Context, Router } from '@orpc/server'
-import type { FetchHandlerOptions } from '@orpc/server/fetch'
+import type { Context, Router } from '@rubenbupe/orpc-server'
+import type { FetchHandlerOptions } from '@rubenbupe/orpc-server/fetch'
 import type { StandardOpenAPIHandlerOptions } from '../standard'
-import { StandardBracketNotationSerializer, StandardOpenAPIJsonSerializer, StandardOpenAPISerializer } from '@orpc/openapi-client/standard'
-import { FetchHandler } from '@orpc/server/fetch'
-import { StandardHandler } from '@orpc/server/standard'
+import { StandardBracketNotationSerializer, StandardOpenAPIJsonSerializer, StandardOpenAPISerializer } from '@rubenbupe/orpc-openapi-client/standard'
+import { FetchHandler } from '@rubenbupe/orpc-server/fetch'
+import { StandardHandler } from '@rubenbupe/orpc-server/standard'
 import { StandardOpenAPICodec, StandardOpenAPIMatcher } from '../standard'
 
 export class OpenAPIHandler<T extends Context> extends FetchHandler<T> {

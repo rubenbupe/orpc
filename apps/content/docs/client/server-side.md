@@ -16,7 +16,7 @@ oRPC offers multiple methods to invoke a [procedure](/docs/procedure).
 Define your procedure and turn it into a callable procedure:
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 const getProcedure = os
@@ -35,7 +35,7 @@ Alternatively, call your procedure using the `call` helper:
 
 ```ts twoslash
 import { z } from 'zod'
-import { call, os } from '@orpc/server'
+import { call, os } from '@rubenbupe/orpc-server'
 
 const getProcedure = os
   .input(z.object({ id: z.string() }))
@@ -53,7 +53,7 @@ Create a [router](/docs/router) based client to access multiple procedures:
 ```ts twoslash
 import { z } from 'zod'
 // ---cut---
-import { createRouterClient, os } from '@orpc/server'
+import { createRouterClient, os } from '@rubenbupe/orpc-server'
 
 const ping = os.handler(() => 'pong')
 const pong = os.handler(() => 'ping')
@@ -71,7 +71,7 @@ You can define a client context to pass additional information when calling proc
 
 ```ts twoslash
 import { z } from 'zod'
-import { createRouterClient, os } from '@orpc/server'
+import { createRouterClient, os } from '@rubenbupe/orpc-server'
 // ---cut---
 interface ClientContext {
   cache?: boolean

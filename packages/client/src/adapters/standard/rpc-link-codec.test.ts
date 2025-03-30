@@ -1,4 +1,4 @@
-import * as StandardServer from '@orpc/standard-server'
+import * as StandardServer from '@rubenbupe/orpc-standard-server'
 import * as ErrorModule from '../../error'
 import { StandardRPCJsonSerializer } from './rpc-json-serializer'
 import { StandardRPCLinkCodec } from './rpc-link-codec'

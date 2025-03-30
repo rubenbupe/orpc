@@ -1,4 +1,4 @@
-import type { StandardHeaders } from '@orpc/standard-server'
+import type { StandardHeaders } from '@rubenbupe/orpc-standard-server'
 
 /**
  * @param headers

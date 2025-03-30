@@ -10,7 +10,7 @@ oRPC procedures support metadata, simple key-value pairs that provide extra info
 ## Basic Example
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 declare const db: Map<string, unknown>
 // ---cut---
 interface ORPCMetadata {

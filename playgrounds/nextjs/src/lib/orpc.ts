@@ -1,8 +1,8 @@
 import type { router } from '@/router'
-import type { RouterClient } from '@orpc/server'
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { createORPCReactQueryUtils } from '@orpc/react-query'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { createORPCReactQueryUtils } from '@rubenbupe/orpc-react-query'
 
 const rpcLink = new RPCLink({
   url: new URL('/rpc', typeof window !== 'undefined' ? window.location.href : 'http://localhost:3000'),

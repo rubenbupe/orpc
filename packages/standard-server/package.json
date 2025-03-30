@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/standard-server",
+  "name": "@rubenbupe/orpc-standard-server",
   "type": "module",
   "version": "1.0.0-beta.4",
   "license": "MIT",
@@ -17,6 +17,7 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       }
     }
@@ -33,7 +34,7 @@
     "type:check": "tsc -b"
   },
   "dependencies": {
-    "@orpc/shared": "workspace:*",
+    "@rubenbupe/orpc-shared": "workspace:*",
     "@tinyhttp/content-disposition": "^2.2.2"
   }
 }

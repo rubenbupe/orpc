@@ -1,4 +1,4 @@
-import { getEventMeta, withEventMeta } from '@orpc/standard-server'
+import { getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'
 import { mapEventIterator } from './event-iterator'
 
 describe('mapEventIterator', () => {

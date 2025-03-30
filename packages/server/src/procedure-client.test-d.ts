@@ -1,10 +1,10 @@
-import type { Client } from '@orpc/client'
-import type { AnySchema, ErrorMap, ORPCError } from '@orpc/contract'
+import type { Client } from '@rubenbupe/orpc-client'
+import type { AnySchema, ErrorMap, ORPCError } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { Context } from './context'
 import type { ORPCErrorConstructorMap } from './error'
 import type { Procedure } from './procedure'
-import { safe } from '@orpc/client'
+import { safe } from '@rubenbupe/orpc-client'
 import { ping, pong } from '../tests/shared'
 import { createProcedureClient, type ProcedureClient } from './procedure-client'
 

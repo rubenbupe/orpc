@@ -1,4 +1,4 @@
-import type { ContractRouter, Meta } from '@orpc/contract'
+import type { ContractRouter, Meta } from '@rubenbupe/orpc-contract'
 import type { BaseMeta } from '../../contract/tests/shared'
 import type { CurrentContext, InitialContext } from '../tests/shared'
 import type { Context } from './context'

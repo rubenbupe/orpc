@@ -12,23 +12,23 @@ A Plugin refined alternative to `z.coerce` that automatically converts inputs to
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/zod@latest
+npm install @rubenbupe/orpc-zod@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/zod@latest
+yarn add @rubenbupe/orpc-zod@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/zod@latest
+pnpm add @rubenbupe/orpc-zod@latest
 ```
 
 ```sh [bun]
-bun add @orpc/zod@latest
+bun add @rubenbupe/orpc-zod@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/zod@latest
+deno install npm:@rubenbupe/orpc-zod@latest
 ```
 
 :::
@@ -36,8 +36,8 @@ deno install npm:@orpc/zod@latest
 ## Setup
 
 ```ts
-import { OpenAPIHandler } from '@orpc/openapi/fetch'
-import { ZodSmartCoercionPlugin } from '@orpc/zod'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch'
+import { ZodSmartCoercionPlugin } from '@rubenbupe/orpc-zod'
 
 const handler = new OpenAPIHandler(router, {
   plugins: [new ZodSmartCoercionPlugin()]

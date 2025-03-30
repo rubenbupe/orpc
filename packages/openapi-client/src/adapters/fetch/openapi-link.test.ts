@@ -1,5 +1,5 @@
-import { createORPCClient } from '@orpc/client'
-import { os } from '@orpc/server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { os } from '@rubenbupe/orpc-server'
 import { OpenAPIHandler } from '../../../../openapi/src/adapters/fetch/openapi-handler'
 import { OpenAPILink } from './openapi-link'
 

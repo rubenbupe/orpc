@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/react-query",
+  "name": "@rubenbupe/orpc-react-query",
   "type": "module",
   "version": "1.0.0-beta.4",
   "license": "MIT",
@@ -21,6 +21,7 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       }
     }
@@ -37,12 +38,12 @@
     "type:check": "tsc -b"
   },
   "peerDependencies": {
-    "@orpc/client": "workspace:*",
+    "@rubenbupe/orpc-client": "workspace:*",
     "@tanstack/react-query": ">=5.59.0",
     "react": ">=18.3.0"
   },
   "dependencies": {
-    "@orpc/shared": "workspace:*"
+    "@rubenbupe/orpc-shared": "workspace:*"
   },
   "devDependencies": {
     "react": "^19.1.0",

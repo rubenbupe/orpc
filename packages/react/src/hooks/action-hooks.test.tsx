@@ -1,4 +1,4 @@
-import { ORPCError, os } from '@orpc/server'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
 import { act, renderHook, waitFor } from '@testing-library/react'
 import { baseErrorMap, inputSchema, outputSchema } from '../../../contract/tests/shared'
 import { useServerAction } from './action-hooks'

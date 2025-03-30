@@ -14,7 +14,7 @@ Customize serialization by creating your own `StandardOpenAPICustomJsonSerialize
 1. **Define Your Custom Serializer**
 
    ```ts twoslash
-   import type { StandardOpenAPICustomJsonSerializer } from '@orpc/openapi-client/standard'
+   import type { StandardOpenAPICustomJsonSerializer } from '@rubenbupe/orpc-openapi-client/standard'
 
    export class User {
      constructor(
@@ -43,9 +43,9 @@ Customize serialization by creating your own `StandardOpenAPICustomJsonSerialize
 2. **Use Your Custom Serializer**
 
    ```ts twoslash
-   import type { StandardOpenAPICustomJsonSerializer } from '@orpc/openapi-client/standard'
-   import { OpenAPIHandler } from '@orpc/openapi/fetch'
-   import { OpenAPIGenerator } from '@orpc/openapi'
+   import type { StandardOpenAPICustomJsonSerializer } from '@rubenbupe/orpc-openapi-client/standard'
+   import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch'
+   import { OpenAPIGenerator } from '@rubenbupe/orpc-openapi'
    declare const router: Record<never, never>
    declare const userSerializer: StandardOpenAPICustomJsonSerializer
    // ---cut---

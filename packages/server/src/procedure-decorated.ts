@@ -1,4 +1,4 @@
-import type { ClientContext } from '@orpc/client'
+import type { ClientContext } from '@rubenbupe/orpc-client'
 import type {
   AnySchema,
   ErrorMap,
@@ -7,14 +7,14 @@ import type {
   MergedErrorMap,
   Meta,
   Route,
-} from '@orpc/contract'
-import type { IntersectPick, MaybeOptionalOptions } from '@orpc/shared'
+} from '@rubenbupe/orpc-contract'
+import type { IntersectPick, MaybeOptionalOptions } from '@rubenbupe/orpc-shared'
 import type { Context, MergedCurrentContext, MergedInitialContext } from './context'
 import type { ORPCErrorConstructorMap } from './error'
 import type { AnyMiddleware, MapInputMiddleware, Middleware } from './middleware'
 import type { ProcedureActionableClient } from './procedure-action'
 import type { CreateProcedureClientOptions, ProcedureClient } from './procedure-client'
-import { mergeErrorMap, mergeMeta, mergeRoute } from '@orpc/contract'
+import { mergeErrorMap, mergeMeta, mergeRoute } from '@rubenbupe/orpc-contract'
 import { decorateMiddleware } from './middleware-decorated'
 import { addMiddleware } from './middleware-utils'
 import { Procedure } from './procedure'

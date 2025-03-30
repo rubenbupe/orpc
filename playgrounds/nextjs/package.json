@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/nextjs-playground",
+  "name": "@rubenbupe/orpc-nextjs-playground",
   "version": "1.0.0-beta.4",
   "private": true,
   "scripts": {
@@ -10,12 +10,12 @@
     "type:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@orpc/client": "next",
-    "@orpc/openapi": "next",
-    "@orpc/react": "next",
-    "@orpc/react-query": "next",
-    "@orpc/server": "next",
-    "@orpc/zod": "next",
+    "@rubenbupe/orpc-client": "next",
+    "@rubenbupe/orpc-openapi": "next",
+    "@rubenbupe/orpc-react": "next",
+    "@rubenbupe/orpc-react-query": "next",
+    "@rubenbupe/orpc-server": "next",
+    "@rubenbupe/orpc-zod": "next",
     "@tanstack/react-query": "^5.66.4",
     "next": "^15.2.4",
     "react": "^19.1.0",

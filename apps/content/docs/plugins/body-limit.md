@@ -12,8 +12,8 @@ The **Body Limit Plugin** restricts the size of the request body.
 Depending on your adapter, import the corresponding plugin:
 
 ```ts
-import { BodyLimitPlugin } from '@orpc/server/fetch'
-import { BodyLimitPlugin } from '@orpc/server/node'
+import { BodyLimitPlugin } from '@rubenbupe/orpc-server/fetch'
+import { BodyLimitPlugin } from '@rubenbupe/orpc-server/node'
 ```
 
 ## Setup

@@ -14,4 +14,4 @@ export * from './router-client'
 export * from './router-utils'
 export * from './schema'
 
-export { ORPCError } from '@orpc/client'
+export { ORPCError } from '@rubenbupe/orpc-client'

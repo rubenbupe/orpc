@@ -14,23 +14,23 @@ In oRPC, a **contract** specifies the rules and expectations for a procedure. It
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/contract@latest
+npm install @rubenbupe/orpc-contract@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/contract@latest
+yarn add @rubenbupe/orpc-contract@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/contract@latest
+pnpm add @rubenbupe/orpc-contract@latest
 ```
 
 ```sh [bun]
-bun add @orpc/contract@latest
+bun add @rubenbupe/orpc-contract@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/contract@latest
+deno install npm:@rubenbupe/orpc-contract@latest
 ```
 
 :::
@@ -42,7 +42,7 @@ A procedure contract in oRPC is similar to a standard [procedure](/docs/procedur
 ```ts twoslash
 import { z } from 'zod'
 // ---cut---
-import { oc } from '@orpc/contract'
+import { oc } from '@rubenbupe/orpc-contract'
 
 export const exampleContract = oc
   .input(
@@ -79,7 +79,7 @@ Below is a complete example demonstrating how to define a contract for a simple 
 
 ```ts twoslash
 import { z } from 'zod'
-import { oc } from '@orpc/contract'
+import { oc } from '@rubenbupe/orpc-contract'
 // ---cut---
 export const PlanetSchema = z.object({
   id: z.number().int().min(1),
@@ -120,7 +120,7 @@ export const contract = {
 ```ts twoslash
 import type { contract } from './shared/planet'
 // ---cut---
-import type { InferContractRouterInputs } from '@orpc/contract'
+import type { InferContractRouterInputs } from '@rubenbupe/orpc-contract'
 
 export type Inputs = InferContractRouterInputs<typeof contract>
 
@@ -134,7 +134,7 @@ This snippet automatically extracts the expected input types for each procedure 
 ```ts twoslash
 import type { contract } from './shared/planet'
 // ---cut---
-import type { InferContractRouterOutputs } from '@orpc/contract'
+import type { InferContractRouterOutputs } from '@rubenbupe/orpc-contract'
 
 export type Outputs = InferContractRouterOutputs<typeof contract>
 

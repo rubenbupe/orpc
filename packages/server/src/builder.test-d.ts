@@ -1,4 +1,4 @@
-import type { AnySchema, ContractProcedure, ErrorMap, MergedErrorMap, Schema } from '@orpc/contract'
+import type { AnySchema, ContractProcedure, ErrorMap, MergedErrorMap, Schema } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { CurrentContext, InitialContext } from '../tests/shared'
 import type { Builder } from './builder'

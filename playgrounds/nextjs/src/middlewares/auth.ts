@@ -1,5 +1,5 @@
 import type { User } from '@/schemas/user'
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 
 export const requiredAuthMiddleware = os
   .$context<{ session?: { user?: User } }>()

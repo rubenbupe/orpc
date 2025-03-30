@@ -12,23 +12,23 @@ Call your [procedures](/docs/procedure) remotely as if they were local functions
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/client@latest
+npm install @rubenbupe/orpc-client@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/client@latest
+yarn add @rubenbupe/orpc-client@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/client@latest
+pnpm add @rubenbupe/orpc-client@latest
 ```
 
 ```sh [bun]
-bun add @orpc/client@latest
+bun add @rubenbupe/orpc-client@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/client@latest
+deno install npm:@rubenbupe/orpc-client@latest
 ```
 
 :::
@@ -38,10 +38,10 @@ deno install npm:@orpc/client@latest
 This guide uses [RPCLink](/docs/client/rpc-link), so make sure your server is set up with [RPCHandler](/docs/rpc-handler).
 
 ```ts
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { RouterClient } from '@orpc/server'
-import { ContractRouterClient } from '@orpc/contract'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { ContractRouterClient } from '@rubenbupe/orpc-contract'
 
 const link = new RPCLink({
   url: 'http://localhost:3000/rpc',
@@ -67,7 +67,7 @@ Once your client is set up, you can call your [procedures](/docs/procedure) as i
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 
 const client = {} as RouterClient<typeof router>
 // ---cut---

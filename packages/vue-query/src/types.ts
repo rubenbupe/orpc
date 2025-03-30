@@ -1,5 +1,5 @@
-import type { ClientContext } from '@orpc/client'
-import type { AnyFunction, SetOptional } from '@orpc/shared'
+import type { ClientContext } from '@rubenbupe/orpc-client'
+import type { AnyFunction, SetOptional } from '@rubenbupe/orpc-shared'
 import type { MutationObserverOptions, QueryFunctionContext, QueryKey, QueryObserverOptions, UseInfiniteQueryOptions } from '@tanstack/vue-query'
 import type { ComputedRef, MaybeRef, MaybeRefOrGetter } from 'vue'
 

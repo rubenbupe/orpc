@@ -1,5 +1,5 @@
-import type { AnySchema } from '@orpc/contract'
-import type { ConditionalSchemaConverter, JSONSchema, SchemaConvertOptions } from '@orpc/openapi'
+import type { AnySchema } from '@rubenbupe/orpc-contract'
+import type { ConditionalSchemaConverter, JSONSchema, SchemaConvertOptions } from '@rubenbupe/orpc-openapi'
 import type { Type } from 'arktype'
 
 export class experimental_ArkTypeToJsonSchemaConverter implements ConditionalSchemaConverter {

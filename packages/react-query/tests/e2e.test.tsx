@@ -1,5 +1,5 @@
-import { isDefinedError } from '@orpc/client'
-import { ORPCError } from '@orpc/contract'
+import { isDefinedError } from '@rubenbupe/orpc-client'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { useInfiniteQuery, useMutation, useQuery } from '@tanstack/react-query'
 import { renderHook } from '@testing-library/react'
 import { pingHandler } from '../../server/tests/shared'

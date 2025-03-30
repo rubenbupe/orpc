@@ -1,5 +1,5 @@
-import type { StandardRequest } from '@orpc/standard-server'
-import * as StandardServerFetch from '@orpc/standard-server-fetch'
+import type { StandardRequest } from '@rubenbupe/orpc-standard-server'
+import * as StandardServerFetch from '@rubenbupe/orpc-standard-server-fetch'
 import { LinkFetchClient } from './link-fetch-client'
 
 const toFetchRequestSpy = vi.spyOn(StandardServerFetch, 'toFetchRequest')

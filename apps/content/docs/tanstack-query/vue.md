@@ -12,23 +12,23 @@ This guide shows how to integrate oRPC with Tanstack Query for Vue. For an intro
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/vue-query@latest @tanstack/vue-query@latest
+npm install @rubenbupe/orpc-vue-query@latest @tanstack/vue-query@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/vue-query@latest @tanstack/vue-query@latest
+yarn add @rubenbupe/orpc-vue-query@latest @tanstack/vue-query@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/vue-query@latest @tanstack/vue-query@latest
+pnpm add @rubenbupe/orpc-vue-query@latest @tanstack/vue-query@latest
 ```
 
 ```sh [bun]
-bun add @orpc/vue-query@latest @tanstack/vue-query@latest
+bun add @rubenbupe/orpc-vue-query@latest @tanstack/vue-query@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/vue-query@latest npm:@tanstack/vue-query@latest
+deno install npm:@rubenbupe/orpc-vue-query@latest npm:@tanstack/vue-query@latest
 ```
 
 :::
@@ -39,10 +39,10 @@ Before you begin, ensure you have already configured a [server-side client](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router>
 // ---cut---
-import { createORPCVueQueryUtils } from '@orpc/vue-query'
+import { createORPCVueQueryUtils } from '@rubenbupe/orpc-vue-query'
 
 export const orpc = createORPCVueQueryUtils(client)
 

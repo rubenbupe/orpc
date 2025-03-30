@@ -12,7 +12,7 @@ description: Integrate oRPC with Nuxt.js
 ::: code-group
 
 ```ts [server/routes/rpc/[...].ts]
-import { RPCHandler } from '@orpc/server/node'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
 
 const handler = new RPCHandler(router)
 

@@ -1,6 +1,6 @@
 import type { RouterClient } from '../../../server/src/router-client'
 import type { ClientRetryPluginContext } from './retry'
-import { getEventMeta, withEventMeta } from '@orpc/standard-server'
+import { getEventMeta, withEventMeta } from '@rubenbupe/orpc-standard-server'
 import { RPCHandler } from '../../../server/src/adapters/fetch/rpc-handler'
 import { os } from '../../../server/src/builder'
 import { RPCLink } from '../adapters/fetch'

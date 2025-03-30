@@ -1,5 +1,5 @@
 import type { InfiniteData } from '@tanstack/vue-query'
-import { isDefinedError } from '@orpc/client'
+import { isDefinedError } from '@rubenbupe/orpc-client'
 import { useInfiniteQuery, useMutation, useQueries, useQuery } from '@tanstack/vue-query'
 import { computed, ref } from 'vue'
 import { orpc as client } from '../../client/tests/shared'

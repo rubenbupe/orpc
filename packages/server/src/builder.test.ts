@@ -1,5 +1,5 @@
-import type { Schema } from '@orpc/contract'
-import { isContractProcedure } from '@orpc/contract'
+import type { Schema } from '@rubenbupe/orpc-contract'
+import { isContractProcedure } from '@rubenbupe/orpc-contract'
 import { z } from 'zod'
 import { baseErrorMap, baseMeta, baseRoute, generalSchema, inputSchema, outputSchema } from '../../contract/tests/shared'
 import { router } from '../tests/shared'

@@ -2,7 +2,7 @@ import type { Context } from '../../context'
 import type { Router } from '../../router'
 import type { StandardRPCHandlerOptions } from '../standard'
 import type { NodeHttpHandlerOptions } from './handler'
-import { StandardRPCJsonSerializer, StandardRPCSerializer } from '@orpc/client/standard'
+import { StandardRPCJsonSerializer, StandardRPCSerializer } from '@rubenbupe/orpc-client/standard'
 import { StandardHandler, StandardRPCCodec, StandardRPCMatcher } from '../standard'
 import { NodeHttpHandler } from './handler'
 

@@ -1,4 +1,4 @@
-import { isObject } from '@orpc/shared'
+import { isObject } from '@rubenbupe/orpc-shared'
 
 export type StandardOpenAPIJsonSerialized = [json: unknown, hasBlob: boolean]
 

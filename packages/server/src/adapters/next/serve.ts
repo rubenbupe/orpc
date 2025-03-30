@@ -1,9 +1,9 @@
-import type { MaybeOptionalOptions, Value } from '@orpc/shared'
+import type { MaybeOptionalOptions, Value } from '@rubenbupe/orpc-shared'
 import type { NextRequest } from 'next/server'
 import type { Context } from '../../context'
 import type { FetchHandler } from '../fetch'
 import type { StandardHandleOptions } from '../standard'
-import { value } from '@orpc/shared'
+import { value } from '@rubenbupe/orpc-shared'
 
 export type ServeOptions<T extends Context> =
   & Omit<StandardHandleOptions<T>, 'context'>

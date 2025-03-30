@@ -22,23 +22,23 @@ This guide covers the basics: defining procedures, handling errors, and integrat
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/server@latest @orpc/client@latest
+npm install @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/server@latest @orpc/client@latest
+yarn add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/server@latest @orpc/client@latest
+pnpm add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest
 ```
 
 ```sh [bun]
-bun add @orpc/server@latest @orpc/client@latest
+bun add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/server@latest npm:@orpc/client@latest
+deno install npm:@rubenbupe/orpc-server@latest npm:@rubenbupe/orpc-client@latest
 ```
 
 :::
@@ -49,7 +49,7 @@ We'll use [Zod](https://github.com/colinhacks/zod) for schema validation (option
 
 ```ts twoslash
 import type { IncomingHttpHeaders } from 'node:http'
-import { ORPCError, os } from '@orpc/server'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 const PlanetSchema = z.object({
@@ -114,8 +114,8 @@ Using [Node.js](/docs/integrations/node) as the server runtime, but oRPC also su
 import { router } from './shared/planet'
 // ---cut---
 import { createServer } from 'node:http'
-import { RPCHandler } from '@orpc/server/node'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [new CORSPlugin()]
@@ -146,9 +146,9 @@ Learn more about [RPCHandler](/docs/rpc-handler).
 ```ts twoslash
 import { router } from './shared/planet'
 // ---cut---
-import type { RouterClient } from '@orpc/server'
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
 
 const link = new RPCLink({
   url: 'http://127.0.0.1:3000',

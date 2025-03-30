@@ -20,23 +20,23 @@ oRPC is inherently compatible with OpenAPI, but you may need additional configur
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/server@latest @orpc/client@latest @orpc/openapi@latest
+npm install @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/server@latest @orpc/client@latest @orpc/openapi@latest
+yarn add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/server@latest @orpc/client@latest @orpc/openapi@latest
+pnpm add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [bun]
-bun add @orpc/server@latest @orpc/client@latest @orpc/openapi@latest
+bun add @rubenbupe/orpc-server@latest @rubenbupe/orpc-client@latest @rubenbupe/orpc-openapi@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/server@latest npm:@orpc/client@latest @orpc/openapi@latest
+deno install npm:@rubenbupe/orpc-server@latest npm:@rubenbupe/orpc-client@latest @rubenbupe/orpc-openapi@latest
 ```
 
 :::
@@ -47,7 +47,7 @@ This snippet is based on the [Getting Started](/docs/getting-started) guide. Ple
 
 ```ts twoslash
 import type { IncomingHttpHeaders } from 'node:http'
-import { ORPCError, os } from '@orpc/server'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 const PlanetSchema = z.object({
@@ -124,8 +124,8 @@ For more `.route` options, see [Routing](/docs/openapi/routing).
 import { router } from './shared/planet'
 // ---cut---
 import { createServer } from 'node:http'
-import { OpenAPIHandler } from '@orpc/openapi/node'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new OpenAPIHandler(router, {
   plugins: [new CORSPlugin()]
@@ -170,8 +170,8 @@ Just a small tweak makes your oRPC API OpenAPI-compliant!
 ## Generating OpenAPI Spec
 
 ```ts twoslash
-import { OpenAPIGenerator } from '@orpc/openapi'
-import { ZodToJsonSchemaConverter } from '@orpc/zod'
+import { OpenAPIGenerator } from '@rubenbupe/orpc-openapi'
+import { ZodToJsonSchemaConverter } from '@rubenbupe/orpc-zod'
 import { router } from './shared/planet'
 
 const generator = new OpenAPIGenerator({

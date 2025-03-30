@@ -1,8 +1,8 @@
-import type { NodeHttpRequest, NodeHttpResponse, SendStandardResponseOptions } from '@orpc/standard-server-node'
+import type { NodeHttpRequest, NodeHttpResponse, SendStandardResponseOptions } from '@rubenbupe/orpc-standard-server-node'
 import type { Context } from '../../context'
 import type { StandardHandleOptions, StandardHandler, StandardHandlerPlugin } from '../standard'
-import { intercept, type Interceptor, type MaybeOptionalOptions, resolveMaybeOptionalOptions, toArray } from '@orpc/shared'
-import { sendStandardResponse, toStandardLazyRequest } from '@orpc/standard-server-node'
+import { intercept, type Interceptor, type MaybeOptionalOptions, resolveMaybeOptionalOptions, toArray } from '@rubenbupe/orpc-shared'
+import { sendStandardResponse, toStandardLazyRequest } from '@rubenbupe/orpc-standard-server-node'
 import { type FriendlyStandardHandleOptions, resolveFriendlyStandardHandleOptions } from '../standard/utils'
 
 export type NodeHttpHandleResult = { matched: true } | { matched: false }

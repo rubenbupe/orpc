@@ -22,7 +22,7 @@ Redundant middleware execution can hurt performance, especially if the middlewar
 Use the `context` to track middleware execution and prevent duplication. For example:
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 declare function connectDb(): Promise<'a_fake_db'>
 // ---cut---
 const dbProvider = os
@@ -40,7 +40,7 @@ const dbProvider = os
 Now `dbProvider` middleware can be safely applied multiple times without duplicating the database connection:
 
 ```ts twoslash
-import { call, os } from '@orpc/server'
+import { call, os } from '@rubenbupe/orpc-server'
 
 declare function connectDb(): Promise<'a_fake_db'>
 const dbProvider = os

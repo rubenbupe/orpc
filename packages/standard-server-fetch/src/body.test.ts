@@ -1,4 +1,4 @@
-import { isAsyncIteratorObject } from '@orpc/shared'
+import { isAsyncIteratorObject } from '@rubenbupe/orpc-shared'
 import { toFetchBody, toStandardBody } from './body'
 
 import * as EventIteratorModule from './event-iterator'

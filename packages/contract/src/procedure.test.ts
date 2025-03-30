@@ -1,4 +1,4 @@
-import * as ClientModule from '@orpc/client'
+import * as ClientModule from '@rubenbupe/orpc-client'
 import { ping, pong } from '../tests/shared'
 import { ContractProcedure, isContractProcedure } from './procedure'
 

@@ -1,5 +1,5 @@
 import type { StandardHeaders } from './types'
-import { toArray } from '@orpc/shared'
+import { toArray } from '@rubenbupe/orpc-shared'
 
 export { contentDisposition, parse as parseContentDisposition } from '@tinyhttp/content-disposition'
 

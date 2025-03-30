@@ -1,5 +1,5 @@
-import { isDefinedError } from '@orpc/client'
-import { ORPCError } from '@orpc/contract'
+import { isDefinedError } from '@rubenbupe/orpc-client'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { renderHook } from '@solidjs/testing-library'
 import { createInfiniteQuery, createMutation, createQuery } from '@tanstack/solid-query'
 import { pingHandler } from '../../server/tests/shared'

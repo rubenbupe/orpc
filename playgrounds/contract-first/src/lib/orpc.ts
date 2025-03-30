@@ -1,7 +1,7 @@
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { createORPCReactQueryUtils } from '@orpc/react-query'
-import type { ContractRouterClient } from '@orpc/contract'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { createORPCReactQueryUtils } from '@rubenbupe/orpc-react-query'
+import type { ContractRouterClient } from '@rubenbupe/orpc-contract'
 import type { contract } from '../contract'
 
 const rpcLink = new RPCLink({

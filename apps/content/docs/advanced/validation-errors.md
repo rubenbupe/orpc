@@ -14,9 +14,9 @@ oRPC provides built-in validation errors that work well by default. However, you
 ```ts twoslash
 import { z } from 'zod'
 import { router } from './shared/planet'
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 // ---cut---
-import { onError, ORPCError, ValidationError } from '@orpc/server'
+import { onError, ORPCError, ValidationError } from '@rubenbupe/orpc-server'
 
 const handler = new RPCHandler(router, {
   clientInterceptors: [
@@ -52,7 +52,7 @@ const handler = new RPCHandler(router, {
 ```ts twoslash
 import { z } from 'zod'
 // ---cut---
-import { onError, ORPCError, os, ValidationError } from '@orpc/server'
+import { onError, ORPCError, os, ValidationError } from '@rubenbupe/orpc-server'
 
 const base = os.use(onError((error) => {
   if (
@@ -98,9 +98,9 @@ As explained in the [error handling guide](/docs/error-handling#combining-both-a
 
 ```ts twoslash
 import { z } from 'zod'
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 // ---cut---
-import { onError, ORPCError, os, ValidationError } from '@orpc/server'
+import { onError, ORPCError, os, ValidationError } from '@rubenbupe/orpc-server'
 
 const base = os.errors({
   INPUT_VALIDATION_FAILED: {

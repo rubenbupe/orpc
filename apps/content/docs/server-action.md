@@ -12,7 +12,7 @@ React [Server Actions](https://react.dev/reference/rsc/server-functions) let cli
 Define your procedure with `.actionable` for Server Action support.
 
 ```ts twoslash
-import { onError, os } from '@orpc/server'
+import { onError, os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 // ---cut---
 'use server'
@@ -66,7 +66,7 @@ This approach seamlessly integrates server-side procedures with client component
 The `.actionable` modifier supports type-safe error handling with a JSON-like error object.
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 export const someAction = os
@@ -97,32 +97,32 @@ else {
 }
 ```
 
-## `@orpc/react` Package
+## `@rubenbupe/orpc-react` Package
 
-The `@orpc/react` package offers utilities to integrate oRPC with React and React Server Actions.
+The `@rubenbupe/orpc-react` package offers utilities to integrate oRPC with React and React Server Actions.
 
 ### Installation
 
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/react@latest
+npm install @rubenbupe/orpc-react@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/react@latest
+yarn add @rubenbupe/orpc-react@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/react@latest
+pnpm add @rubenbupe/orpc-react@latest
 ```
 
 ```sh [bun]
-bun add @orpc/react@latest
+bun add @rubenbupe/orpc-react@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/react@latest
+deno install npm:@rubenbupe/orpc-react@latest
 ```
 
 :::
@@ -133,7 +133,7 @@ The `useServerAction` hook simplifies invoking server actions in React.
 
 ```tsx twoslash
 import * as React from 'react'
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 export const someAction = os
@@ -149,8 +149,8 @@ export const someAction = os
 // ---cut---
 'use client'
 
-import { useServerAction } from '@orpc/react/hooks'
-import { isDefinedError, onError } from '@orpc/client'
+import { useServerAction } from '@rubenbupe/orpc-react/hooks'
+import { isDefinedError, onError } from '@rubenbupe/orpc-client'
 
 export function MyComponent() {
   const { execute, data, error, status } = useServerAction(someAction, {
@@ -184,7 +184,7 @@ export function MyComponent() {
 The `createFormAction` utility accepts a [procedure](/docs/procedure) and returns a function to handle form submissions. It uses [Bracket Notation](/docs/openapi/bracket-notation) to deserialize form data.
 
 ```tsx
-import { createFormAction } from '@orpc/react'
+import { createFormAction } from '@rubenbupe/orpc-react'
 
 const dosomething = os
   .input(

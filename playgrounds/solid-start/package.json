@@ -1,5 +1,5 @@
 {
-  "name": "@orpc/solid-start-playground",
+  "name": "@rubenbupe/orpc-solid-start-playground",
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
@@ -7,11 +7,11 @@
     "start": "vinxi start"
   },
   "dependencies": {
-    "@orpc/client": "next",
-    "@orpc/openapi": "next",
-    "@orpc/server": "next",
-    "@orpc/solid-query": "next",
-    "@orpc/zod": "next",
+    "@rubenbupe/orpc-client": "next",
+    "@rubenbupe/orpc-openapi": "next",
+    "@rubenbupe/orpc-server": "next",
+    "@rubenbupe/orpc-solid-query": "next",
+    "@rubenbupe/orpc-zod": "next",
     "@solidjs/router": "^0.15.3",
     "@solidjs/start": "^1.1.0",
     "@tanstack/solid-query": "^5.66.4",

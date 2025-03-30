@@ -1,4 +1,4 @@
-import type { StandardResponse } from '@orpc/standard-server'
+import type { StandardResponse } from '@rubenbupe/orpc-standard-server'
 import * as Body from './body'
 import * as Headers from './headers'
 import { toFetchResponse, toStandardLazyResponse } from './response'

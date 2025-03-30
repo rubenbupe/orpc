@@ -12,23 +12,23 @@ This guide shows how to integrate oRPC with Tanstack Query for Solid. For an int
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/solid-query@latest @tanstack/solid-query@latest
+npm install @rubenbupe/orpc-solid-query@latest @tanstack/solid-query@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/solid-query@latest @tanstack/solid-query@latest
+yarn add @rubenbupe/orpc-solid-query@latest @tanstack/solid-query@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/solid-query@latest @tanstack/solid-query@latest
+pnpm add @rubenbupe/orpc-solid-query@latest @tanstack/solid-query@latest
 ```
 
 ```sh [bun]
-bun add @orpc/solid-query@latest @tanstack/solid-query@latest
+bun add @rubenbupe/orpc-solid-query@latest @tanstack/solid-query@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/solid-query@latest npm:@tanstack/solid-query@latest
+deno install npm:@rubenbupe/orpc-solid-query@latest npm:@tanstack/solid-query@latest
 ```
 
 :::
@@ -39,10 +39,10 @@ Before you begin, ensure you have already configured a [server-side client](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router>
 // ---cut---
-import { createORPCSolidQueryUtils } from '@orpc/solid-query'
+import { createORPCSolidQueryUtils } from '@rubenbupe/orpc-solid-query'
 
 export const orpc = createORPCSolidQueryUtils(client)
 
@@ -73,8 +73,8 @@ Unlike the React version, when creating a Solid Query Signal, the first argument
 
 ```ts twoslash
 import type { router } from './shared/planet'
-import type { RouterClient } from '@orpc/server'
-import type { RouterUtils } from '@orpc/solid-query'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import type { RouterUtils } from '@rubenbupe/orpc-solid-query'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 declare const condition: boolean
 // ---cut---

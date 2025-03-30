@@ -1,9 +1,9 @@
-import type { Context, Router } from '@orpc/server'
-import type { NodeHttpHandlerOptions } from '@orpc/server/node'
+import type { Context, Router } from '@rubenbupe/orpc-server'
+import type { NodeHttpHandlerOptions } from '@rubenbupe/orpc-server/node'
 import type { StandardOpenAPIHandlerOptions } from '../standard'
-import { StandardBracketNotationSerializer, StandardOpenAPIJsonSerializer, StandardOpenAPISerializer } from '@orpc/openapi-client/standard'
-import { NodeHttpHandler } from '@orpc/server/node'
-import { StandardHandler } from '@orpc/server/standard'
+import { StandardBracketNotationSerializer, StandardOpenAPIJsonSerializer, StandardOpenAPISerializer } from '@rubenbupe/orpc-openapi-client/standard'
+import { NodeHttpHandler } from '@rubenbupe/orpc-server/node'
+import { StandardHandler } from '@rubenbupe/orpc-server/standard'
 import { StandardOpenAPICodec, StandardOpenAPIMatcher } from '../standard'
 
 export class OpenAPIHandler<T extends Context> extends NodeHttpHandler<T> {

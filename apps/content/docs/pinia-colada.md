@@ -16,23 +16,23 @@ This documentation assumes you are already familiar with [Pinia Colada](https://
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/vue-colada@latest @pinia/colada@latest
+npm install @rubenbupe/orpc-vue-colada@latest @pinia/colada@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/vue-colada@latest @pinia/colada@latest
+yarn add @rubenbupe/orpc-vue-colada@latest @pinia/colada@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/vue-colada@latest @pinia/colada@latest
+pnpm add @rubenbupe/orpc-vue-colada@latest @pinia/colada@latest
 ```
 
 ```sh [bun]
-bun add @orpc/vue-colada@latest @pinia/colada@latest
+bun add @rubenbupe/orpc-vue-colada@latest @pinia/colada@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/vue-colada@latest npm:@pinia/colada@latest
+deno install npm:@rubenbupe/orpc-vue-colada@latest npm:@pinia/colada@latest
 ```
 
 :::
@@ -43,10 +43,10 @@ Before you begin, ensure you have already configured a [server-side client](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router>
 // ---cut---
-import { createORPCVueColadaUtils } from '@orpc/vue-colada'
+import { createORPCVueColadaUtils } from '@rubenbupe/orpc-vue-colada'
 
 export const orpc = createORPCVueColadaUtils(client)
 
@@ -75,8 +75,8 @@ Use `.queryOptions` to configure queries. Use it with hooks like `useQuery`, `us
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { RouterUtils } from '@orpc/vue-colada'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { RouterUtils } from '@rubenbupe/orpc-vue-colada'
 import { useQuery } from '@pinia/colada'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 // ---cut---
@@ -93,8 +93,8 @@ Use `.mutationOptions` to create options for mutations. Use it with hooks like `
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { RouterUtils } from '@orpc/vue-colada'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { RouterUtils } from '@rubenbupe/orpc-vue-colada'
 import { useMutation } from '@pinia/colada'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 // ---cut---
@@ -112,8 +112,8 @@ Use `.key` to generate a `QueryKey` or `MutationKey`. This is useful for tasks s
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { RouterUtils } from '@orpc/vue-colada'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { RouterUtils } from '@rubenbupe/orpc-vue-colada'
 import { useQueryCache } from '@pinia/colada'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 // ---cut---
@@ -143,7 +143,7 @@ const result = orpc.planet.find.call({ id: 123 })
 Easily manage type-safe errors using our built-in `isDefinedError` helper.
 
 ```ts
-import { isDefinedError } from '@orpc/client'
+import { isDefinedError } from '@rubenbupe/orpc-client'
 
 const mutation = useMutation(orpc.planet.create.mutationOptions({
   onError: (error) => {

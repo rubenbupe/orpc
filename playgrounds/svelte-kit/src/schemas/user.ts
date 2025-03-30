@@ -1,4 +1,4 @@
-import { oz } from '@orpc/zod'
+import { oz } from '@rubenbupe/orpc-zod'
 import { z } from 'zod'
 
 export type NewUser = z.infer<typeof NewUserSchema>

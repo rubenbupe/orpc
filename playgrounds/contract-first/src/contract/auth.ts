@@ -1,4 +1,4 @@
-import { oc } from '@orpc/contract'
+import { oc } from '@rubenbupe/orpc-contract'
 import { CredentialSchema, TokenSchema } from '../schemas/auth'
 import { NewUserSchema, UserSchema } from '../schemas/user'
 

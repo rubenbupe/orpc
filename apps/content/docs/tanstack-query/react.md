@@ -12,23 +12,23 @@ This guide shows how to integrate oRPC with Tanstack Query for React. For an int
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/react-query@latest @tanstack/react-query@latest
+npm install @rubenbupe/orpc-react-query@latest @tanstack/react-query@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/react-query@latest @tanstack/react-query@latest
+yarn add @rubenbupe/orpc-react-query@latest @tanstack/react-query@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/react-query@latest @tanstack/react-query@latest
+pnpm add @rubenbupe/orpc-react-query@latest @tanstack/react-query@latest
 ```
 
 ```sh [bun]
-bun add @orpc/react-query@latest @tanstack/react-query@latest
+bun add @rubenbupe/orpc-react-query@latest @tanstack/react-query@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/react-query@latest npm:@tanstack/react-query@latest
+deno install npm:@rubenbupe/orpc-react-query@latest npm:@tanstack/react-query@latest
 ```
 
 :::
@@ -39,10 +39,10 @@ Before you begin, ensure you have already configured a [server-side client](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
+import { RouterClient } from '@rubenbupe/orpc-server'
 declare const client: RouterClient<typeof router>
 // ---cut---
-import { createORPCReactQueryUtils } from '@orpc/react-query'
+import { createORPCReactQueryUtils } from '@rubenbupe/orpc-react-query'
 
 export const orpc = createORPCReactQueryUtils(client)
 
@@ -75,8 +75,8 @@ Integrate oRPC React Query utils into your React app with Context:
    import { router } from './shared/planet'
    // ---cut---
    import { createContext, useContext } from 'react'
-   import { RouterUtils } from '@orpc/react-query'
-   import { RouterClient } from '@orpc/server'
+   import { RouterUtils } from '@rubenbupe/orpc-react-query'
+   import { RouterClient } from '@rubenbupe/orpc-server'
 
    type ORPCReactUtils = RouterUtils<RouterClient<typeof router>>
 
@@ -110,8 +110,8 @@ Integrate oRPC React Query utils into your React app with Context:
 
    ```ts twoslash
    import { router } from './shared/planet'
-   import { RouterClient } from '@orpc/server'
-   import { RouterUtils } from '@orpc/react-query'
+   import { RouterClient } from '@rubenbupe/orpc-server'
+   import { RouterUtils } from '@rubenbupe/orpc-react-query'
    import { useQuery } from '@tanstack/react-query'
    declare function useORPC(): RouterUtils<RouterClient<typeof router>>
    // ---cut---
@@ -126,8 +126,8 @@ You can still use [skipToken](https://tanstack.com/query/latest/docs/framework/r
 
 ```ts twoslash
 import type { router } from './shared/planet'
-import type { RouterClient } from '@orpc/server'
-import type { RouterUtils } from '@orpc/react-query'
+import type { RouterClient } from '@rubenbupe/orpc-server'
+import type { RouterUtils } from '@rubenbupe/orpc-react-query'
 declare const orpc: RouterUtils<RouterClient<typeof router>>
 declare const condition: boolean
 // ---cut---

@@ -1,6 +1,6 @@
 import { router } from '@/router'
-import { onError } from '@orpc/server'
-import { RPCHandler, serve } from '@orpc/server/next'
+import { onError } from '@rubenbupe/orpc-server'
+import { RPCHandler, serve } from '@rubenbupe/orpc-server/next'
 import '../../../polyfill'
 
 const rpcHandler = new RPCHandler(router, {

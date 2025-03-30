@@ -1,5 +1,5 @@
-import { ORPCError } from '@orpc/contract'
-import { Procedure } from '@orpc/server'
+import { ORPCError } from '@rubenbupe/orpc-contract'
+import { Procedure } from '@rubenbupe/orpc-server'
 import { ping } from '../../../../server/tests/shared'
 import { StandardOpenAPICodec } from './openapi-codec'
 

@@ -1,6 +1,6 @@
-import type { Client, ORPCError, ORPCErrorJSON } from '@orpc/client'
-import type { AnySchema, ErrorFromErrorMap, ErrorMap, InferSchemaInput, InferSchemaOutput } from '@orpc/contract'
-import { toORPCError } from '@orpc/client'
+import type { Client, ORPCError, ORPCErrorJSON } from '@rubenbupe/orpc-client'
+import type { AnySchema, ErrorFromErrorMap, ErrorMap, InferSchemaInput, InferSchemaOutput } from '@rubenbupe/orpc-contract'
+import { toORPCError } from '@rubenbupe/orpc-client'
 
 export type ActionableError<T extends Error> = T extends ORPCError<infer U, infer V> ? ORPCErrorJSON<U, V> & { defined: true } : ORPCErrorJSON<string, unknown> & { defined: false }
 

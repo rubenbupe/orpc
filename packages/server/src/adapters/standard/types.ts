@@ -1,5 +1,5 @@
-import type { HTTPPath, ORPCError } from '@orpc/client'
-import type { StandardLazyRequest, StandardResponse } from '@orpc/standard-server'
+import type { HTTPPath, ORPCError } from '@rubenbupe/orpc-client'
+import type { StandardLazyRequest, StandardResponse } from '@rubenbupe/orpc-standard-server'
 import type { AnyProcedure } from '../../procedure'
 import type { AnyRouter } from '../../router'
 

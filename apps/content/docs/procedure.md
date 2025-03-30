@@ -17,7 +17,7 @@ In oRPC, a procedure like a standard function but comes with built-in support fo
 Here’s an example of defining a procedure in oRPC:
 
 ```ts
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 
 const example = os
   .use(aMiddleware) // Apply middleware
@@ -46,7 +46,7 @@ By explicitly specifying the `.output` or your `handler's return type`, you enab
 For simple use-case without external libraries, use oRPC’s built-in `type` utility. It takes a mapping function as its first argument:
 
 ```ts twoslash
-import { os, type } from '@orpc/server'
+import { os, type } from '@rubenbupe/orpc-server'
 
 const example = os
   .input(type<{ value: number }>())

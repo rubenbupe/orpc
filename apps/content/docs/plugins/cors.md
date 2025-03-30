@@ -10,7 +10,7 @@ description: CORS Plugin for oRPC
 ## Basic
 
 ```ts
-import { CORSPlugin } from '@orpc/server/plugins'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [

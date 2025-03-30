@@ -1,4 +1,4 @@
-import type { PartialDeep } from '@orpc/shared'
+import type { PartialDeep } from '@rubenbupe/orpc-shared'
 import type { QueryKey } from '@tanstack/svelte-query'
 
 export type KeyType = 'query' | 'infinite' | 'mutation' | undefined

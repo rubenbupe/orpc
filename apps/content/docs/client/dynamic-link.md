@@ -13,10 +13,10 @@ This example shows how the client dynamically selects between two [RPCLink](/doc
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { RPCLink } from '@orpc/client/fetch'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
 // ---cut---
-import { createORPCClient, DynamicLink } from '@orpc/client'
+import { createORPCClient, DynamicLink } from '@rubenbupe/orpc-client'
 
 interface ClientContext {
   cache?: boolean

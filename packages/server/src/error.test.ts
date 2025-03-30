@@ -1,5 +1,5 @@
-import type { ErrorMap } from '@orpc/contract'
-import { ORPCError } from '@orpc/client'
+import type { ErrorMap } from '@rubenbupe/orpc-contract'
+import { ORPCError } from '@rubenbupe/orpc-client'
 import { z } from 'zod'
 import { outputSchema } from '../../contract/tests/shared'
 import { createORPCErrorConstructorMap, validateORPCError } from './error'

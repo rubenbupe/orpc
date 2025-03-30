@@ -11,7 +11,7 @@ Simply iterate over it and await each event.
 ## Basic Usage
 
 ```ts twoslash
-import { ContractRouterClient, eventIterator, oc } from '@orpc/contract'
+import { ContractRouterClient, eventIterator, oc } from '@rubenbupe/orpc-contract'
 import { z } from 'zod'
 
 const contract = {

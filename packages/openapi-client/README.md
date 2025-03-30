@@ -8,7 +8,7 @@
   <a href="https://codecov.io/gh/unnoq/orpc">
     <img alt="codecov" src="https://codecov.io/gh/unnoq/orpc/branch/main/graph/badge.svg">
   </a>
-  <a href="https://www.npmjs.com/package/@orpc/openapi-client">
+  <a href="https://www.npmjs.com/package/@rubenbupe/orpc-openapi-client">
     <img alt="weekly downloads" src="https://img.shields.io/npm/dw/%40orpc%2Fopenapi-client?logo=npm" />
   </a>
   <a href="https://github.com/unnoq/orpc/blob/main/LICENSE">
@@ -50,21 +50,21 @@ You can find the full documentation [here](https://orpc.unnoq.com).
 
 ## Packages
 
-- [@orpc/contract](https://www.npmjs.com/package/@orpc/contract): Build your API contract.
-- [@orpc/server](https://www.npmjs.com/package/@orpc/server): Build your API or implement API contract.
-- [@orpc/client](https://www.npmjs.com/package/@orpc/client): Consume your API on the client with type-safety.
-- [@orpc/react](https://www.npmjs.com/package/@orpc/react): Utilities for integrating oRPC with React and React Server Actions.
-- [@orpc/react-query](https://www.npmjs.com/package/@orpc/react-query): Integration with [React Query](https://tanstack.com/query/latest/docs/framework/react/overview).
-- [@orpc/vue-query](https://www.npmjs.com/package/@orpc/vue-query): Integration with [Vue Query](https://tanstack.com/query/latest/docs/framework/vue/overview).
-- [@orpc/solid-query](https://www.npmjs.com/package/@orpc/solid-query): Integration with [Solid Query](https://tanstack.com/query/latest/docs/framework/solid/overview).
-- [@orpc/svelte-query](https://www.npmjs.com/package/@orpc/svelte-query): Integration with [Svelte Query](https://tanstack.com/query/latest/docs/framework/svelte/overview).
-- [@orpc/vue-colada](https://www.npmjs.com/package/@orpc/vue-colada): Integration with [Pinia Colada](https://pinia-colada.esm.dev/).
-- [@orpc/openapi](https://www.npmjs.com/package/@orpc/openapi): Generate OpenAPI specs and handle OpenAPI requests.
-- [@orpc/zod](https://www.npmjs.com/package/@orpc/zod): More schemas that [Zod](https://zod.dev/) doesn't support yet.
-- [@orpc/valibot](https://www.npmjs.com/package/@orpc/valibot): OpenAPI spec generation from [Valibot](https://valibot.dev/).
-- [@orpc/arktype](https://www.npmjs.com/package/@orpc/arktype): OpenAPI spec generation from [ArkType](https://arktype.io/).
+- [@rubenbupe/orpc-contract](https://www.npmjs.com/package/@rubenbupe/orpc-contract): Build your API contract.
+- [@rubenbupe/orpc-server](https://www.npmjs.com/package/@rubenbupe/orpc-server): Build your API or implement API contract.
+- [@rubenbupe/orpc-client](https://www.npmjs.com/package/@rubenbupe/orpc-client): Consume your API on the client with type-safety.
+- [@rubenbupe/orpc-react](https://www.npmjs.com/package/@rubenbupe/orpc-react): Utilities for integrating oRPC with React and React Server Actions.
+- [@rubenbupe/orpc-react-query](https://www.npmjs.com/package/@rubenbupe/orpc-react-query): Integration with [React Query](https://tanstack.com/query/latest/docs/framework/react/overview).
+- [@rubenbupe/orpc-vue-query](https://www.npmjs.com/package/@rubenbupe/orpc-vue-query): Integration with [Vue Query](https://tanstack.com/query/latest/docs/framework/vue/overview).
+- [@rubenbupe/orpc-solid-query](https://www.npmjs.com/package/@rubenbupe/orpc-solid-query): Integration with [Solid Query](https://tanstack.com/query/latest/docs/framework/solid/overview).
+- [@rubenbupe/orpc-svelte-query](https://www.npmjs.com/package/@rubenbupe/orpc-svelte-query): Integration with [Svelte Query](https://tanstack.com/query/latest/docs/framework/svelte/overview).
+- [@rubenbupe/orpc-vue-colada](https://www.npmjs.com/package/@rubenbupe/orpc-vue-colada): Integration with [Pinia Colada](https://pinia-colada.esm.dev/).
+- [@rubenbupe/orpc-openapi](https://www.npmjs.com/package/@rubenbupe/orpc-openapi): Generate OpenAPI specs and handle OpenAPI requests.
+- [@rubenbupe/orpc-zod](https://www.npmjs.com/package/@rubenbupe/orpc-zod): More schemas that [Zod](https://zod.dev/) doesn't support yet.
+- [@rubenbupe/orpc-valibot](https://www.npmjs.com/package/@rubenbupe/orpc-valibot): OpenAPI spec generation from [Valibot](https://valibot.dev/).
+- [@rubenbupe/orpc-arktype](https://www.npmjs.com/package/@rubenbupe/orpc-arktype): OpenAPI spec generation from [ArkType](https://arktype.io/).
 
-## `@orpc/openapi-client`
+## `@rubenbupe/orpc-openapi-client`
 
 Provides core serializer for OpenAPI requests and responses.
 

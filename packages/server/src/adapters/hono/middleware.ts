@@ -1,9 +1,9 @@
-import type { MaybeOptionalOptions, Value } from '@orpc/shared'
+import type { MaybeOptionalOptions, Value } from '@rubenbupe/orpc-shared'
 import type { Context as HonoContext, MiddlewareHandler } from 'hono'
 import type { Context } from '../../context'
 import type { FetchHandler } from '../fetch'
 import type { StandardHandleOptions } from '../standard'
-import { value } from '@orpc/shared'
+import { value } from '@rubenbupe/orpc-shared'
 
 export type CreateMiddlewareOptions<T extends Context> =
   & Omit<StandardHandleOptions<T>, 'context'>

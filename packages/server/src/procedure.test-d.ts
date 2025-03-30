@@ -1,4 +1,4 @@
-import type { ContractProcedure } from '@orpc/contract'
+import type { ContractProcedure } from '@rubenbupe/orpc-contract'
 import type { baseErrorMap, BaseMeta, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { CurrentContext, InitialContext } from '../tests/shared'
 import type { Procedure } from './procedure'

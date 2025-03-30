@@ -10,10 +10,10 @@ This guide explains how to handle type-safe errors in oRPC clients using [type-s
 ## Using `safe` and `isDefinedError`
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 // ---cut---
-import { isDefinedError, safe } from '@orpc/client'
+import { isDefinedError, safe } from '@rubenbupe/orpc-client'
 
 const doSomething = os
   .input(z.object({ id: z.string() }))

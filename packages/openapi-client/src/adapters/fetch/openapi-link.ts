@@ -1,7 +1,7 @@
-import type { ClientContext } from '@orpc/client'
-import type { AnyContractRouter } from '@orpc/contract'
-import { LinkFetchClient, type LinkFetchClientOptions } from '@orpc/client/fetch'
-import { StandardLink } from '@orpc/client/standard'
+import type { ClientContext } from '@rubenbupe/orpc-client'
+import type { AnyContractRouter } from '@rubenbupe/orpc-contract'
+import { LinkFetchClient, type LinkFetchClientOptions } from '@rubenbupe/orpc-client/fetch'
+import { StandardLink } from '@rubenbupe/orpc-client/standard'
 import { StandardBracketNotationSerializer, StandardOpenAPIJsonSerializer, StandardOpenapiLinkCodec, type StandardOpenAPILinkOptions, StandardOpenAPISerializer } from '../standard'
 
 export interface OpenAPILinkOptions<T extends ClientContext>

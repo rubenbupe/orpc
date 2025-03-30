@@ -1,4 +1,4 @@
-import type { AnyContractRouter } from '@orpc/contract'
+import type { AnyContractRouter } from '@rubenbupe/orpc-contract'
 import type { Lazyable } from './lazy'
 import type { AnyRouter } from './router'
 

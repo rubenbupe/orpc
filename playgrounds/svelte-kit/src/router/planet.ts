@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/server'
+import { ORPCError } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 import { authed, pub } from '../orpc'
 import { NewPlanetSchema, PlanetSchema, UpdatePlanetSchema } from '../schemas/planet'

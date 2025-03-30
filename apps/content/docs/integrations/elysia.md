@@ -11,7 +11,7 @@ description: Integrate oRPC with Elysia
 
 ```ts
 import { Elysia } from 'elysia'
-import { OpenAPIHandler } from '@orpc/openapi/fetch'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch'
 
 const handler = new OpenAPIHandler(router)
 

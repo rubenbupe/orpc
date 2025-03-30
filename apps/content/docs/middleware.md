@@ -16,7 +16,7 @@ Middleware is a function that takes a `next` function as a parameter and either 
 of `next` or modifies the result before returning it.
 
 ```ts twoslash
-import { os } from '@orpc/server'
+import { os } from '@rubenbupe/orpc-server'
 // ---cut---
 const authMiddleware = os
   .$context<{ something?: string }>() // <-- define dependent-context
@@ -65,7 +65,7 @@ const example = os
 Middleware can use to inject or guard the [context](/docs/context).
 
 ```ts twoslash
-import { ORPCError, os } from '@orpc/server'
+import { ORPCError, os } from '@rubenbupe/orpc-server'
 // ---cut---
 const setting = os
   .use(async ({ context, next }) => {
@@ -156,7 +156,7 @@ const concatMiddleware = aMiddleware
 oRPC provides some built-in middlewares that can be used to simplify common use cases.
 
 ```ts
-import { onError, onFinish, onStart, onSuccess } from '@orpc/server'
+import { onError, onFinish, onStart, onSuccess } from '@rubenbupe/orpc-server'
 
 const ping = os
   .use(onStart(() => {

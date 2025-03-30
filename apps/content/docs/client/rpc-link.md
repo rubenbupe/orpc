@@ -12,7 +12,7 @@ RPCLink enables communication with an [RPCHandler](/docs/rpc-handler) on your se
 Before using RPCLink, ensure your server is running an [RPCHandler](/docs/rpc-handler).
 
 ```ts
-import { RPCLink } from '@orpc/client/fetch'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
 
 const link = new RPCLink({
   url: 'http://localhost:3000/rpc',
@@ -31,9 +31,9 @@ Client context lets you pass extra information when calling procedures and dynam
 
 ```ts twoslash
 import { router } from './shared/planet'
-import { RouterClient } from '@orpc/server'
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
+import { RouterClient } from '@rubenbupe/orpc-server'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
 
 interface ClientContext {
   something?: string
@@ -63,7 +63,7 @@ If a property in `ClientContext` is required, oRPC enforces its inclusion when c
 By default, RPCLink sends requests via `POST`. You can override this to use methods like `GET` (for browser or CDN caching) based on your requirements.
 
 ```ts twoslash
-import { RPCLink } from '@orpc/client/fetch'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
 
 interface ClientContext {
   cache?: RequestCache

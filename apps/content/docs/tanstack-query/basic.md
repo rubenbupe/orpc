@@ -102,7 +102,7 @@ const result = orpc.planet.find.call({ id: 123 })
 Easily manage type-safe errors using our built-in `isDefinedError` helper.
 
 ```ts
-import { isDefinedError } from '@orpc/client'
+import { isDefinedError } from '@rubenbupe/orpc-client'
 
 const mutation = useMutation(orpc.planet.create.mutationOptions({
   onError: (error) => {

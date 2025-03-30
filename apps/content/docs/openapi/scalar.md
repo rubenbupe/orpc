@@ -11,10 +11,10 @@ Leverage the [OpenAPI Specification](/docs/openapi/openapi-specification) to gen
 
 ```ts
 import { createServer } from 'node:http'
-import { OpenAPIGenerator } from '@orpc/openapi'
-import { OpenAPIHandler } from '@orpc/openapi/node'
-import { CORSPlugin } from '@orpc/server/plugins'
-import { ZodSmartCoercionPlugin, ZodToJsonSchemaConverter } from '@orpc/zod'
+import { OpenAPIGenerator } from '@rubenbupe/orpc-openapi'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
+import { ZodSmartCoercionPlugin, ZodToJsonSchemaConverter } from '@rubenbupe/orpc-zod'
 
 const openAPIHandler = new OpenAPIHandler(router, {
   plugins: [

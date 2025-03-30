@@ -18,7 +18,7 @@ The [Implementer](/docs/contract-first/implement-contract#the-implementer) is de
 ```ts twoslash
 import { router } from './shared/planet'
 // ---cut---
-import { implement, unlazyRouter } from '@orpc/server'
+import { implement, unlazyRouter } from '@rubenbupe/orpc-server'
 
 const fakeListPlanet = implement(router.planet.list).handler(() => [])
 ```

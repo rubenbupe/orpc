@@ -1,4 +1,4 @@
-import type { IsEqual, Promisable } from '@orpc/shared'
+import type { IsEqual, Promisable } from '@rubenbupe/orpc-shared'
 // eslint-disable-next-line no-restricted-imports
 import type { StandardSchemaV1 } from '@standard-schema/spec'
 

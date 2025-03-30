@@ -1,6 +1,6 @@
 import type { EntryKey } from '@pinia/colada'
-import { StandardRPCJsonSerializer } from '@orpc/client/standard'
-import { stringifyJSON } from '@orpc/shared'
+import { StandardRPCJsonSerializer } from '@rubenbupe/orpc-client/standard'
+import { stringifyJSON } from '@rubenbupe/orpc-shared'
 
 export interface BuildKeyOptions<TInput> {
   input?: TInput

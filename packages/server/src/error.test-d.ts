@@ -1,4 +1,4 @@
-import type { ORPCError } from '@orpc/client'
+import type { ORPCError } from '@rubenbupe/orpc-client'
 import type { baseErrorMap } from '../../contract/tests/shared'
 import type { ORPCErrorConstructorMap } from './error'
 

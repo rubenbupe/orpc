@@ -1,4 +1,4 @@
-import type { AnyContractRouter, ContractProcedure, InferSchemaInput, InferSchemaOutput } from '@orpc/contract'
+import type { AnyContractRouter, ContractProcedure, InferSchemaInput, InferSchemaOutput } from '@rubenbupe/orpc-contract'
 import type { Context } from './context'
 import type { Lazyable } from './lazy'
 import type { Procedure } from './procedure'

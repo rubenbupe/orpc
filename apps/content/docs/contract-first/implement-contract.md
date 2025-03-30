@@ -12,37 +12,37 @@ After defining your contract, the next step is to implement it in your server co
 ::: code-group
 
 ```sh [npm]
-npm install @orpc/server@latest
+npm install @rubenbupe/orpc-server@latest
 ```
 
 ```sh [yarn]
-yarn add @orpc/server@latest
+yarn add @rubenbupe/orpc-server@latest
 ```
 
 ```sh [pnpm]
-pnpm add @orpc/server@latest
+pnpm add @rubenbupe/orpc-server@latest
 ```
 
 ```sh [bun]
-bun add @orpc/server@latest
+bun add @rubenbupe/orpc-server@latest
 ```
 
 ```sh [deno]
-deno install npm:@orpc/server@latest
+deno install npm:@rubenbupe/orpc-server@latest
 ```
 
 :::
 
 ## The Implementer
 
-The `implement` function converts your contract into an implementer instance. This instance compatible with the original `os` from `@orpc/server` provides a type-safe interface to define your procedures and supports features like [Middleware](/docs/middleware) and [Context](/docs/context).
+The `implement` function converts your contract into an implementer instance. This instance compatible with the original `os` from `@rubenbupe/orpc-server` provides a type-safe interface to define your procedures and supports features like [Middleware](/docs/middleware) and [Context](/docs/context).
 
 ```ts twoslash
 import { contract } from './shared/planet'
 // ---cut---
-import { implement } from '@orpc/server'
+import { implement } from '@rubenbupe/orpc-server'
 
-const os = implement(contract) // fully replaces the os from @orpc/server
+const os = implement(contract) // fully replaces the os from @rubenbupe/orpc-server
 ```
 
 ## Implementing Procedures
@@ -51,7 +51,7 @@ Define a procedure by attaching a `.handler` to its corresponding contract, ensu
 
 ```ts twoslash
 import { contract } from './shared/planet'
-import { implement } from '@orpc/server'
+import { implement } from '@rubenbupe/orpc-server'
 
 const os = implement(contract)
 // ---cut---
@@ -82,7 +82,7 @@ Below is a complete implementation of the contract defined in the [previous sect
 
 ```ts twoslash
 import { contract } from './shared/planet'
-import { implement } from '@orpc/server'
+import { implement } from '@rubenbupe/orpc-server'
 // ---cut---
 const os = implement(contract)
 

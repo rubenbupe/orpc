@@ -10,8 +10,8 @@ The Fetch API Server is a lightweight and high-performance server available in m
 ## Basic
 
 ```ts
-import { RPCHandler } from '@orpc/server/fetch'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [

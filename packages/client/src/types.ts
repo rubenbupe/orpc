@@ -1,4 +1,4 @@
-import type { PromiseWithError } from '@orpc/shared'
+import type { PromiseWithError } from '@rubenbupe/orpc-shared'
 
 export type HTTPPath = `/${string}`
 export type HTTPMethod = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH'

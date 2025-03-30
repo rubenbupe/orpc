@@ -1,5 +1,5 @@
 import { createServer } from 'node:http'
-import { isAsyncIteratorObject } from '@orpc/shared'
+import { isAsyncIteratorObject } from '@rubenbupe/orpc-shared'
 import { toStandardLazyRequest } from '../src/request'
 import { sendStandardResponse } from '../src/response'
 

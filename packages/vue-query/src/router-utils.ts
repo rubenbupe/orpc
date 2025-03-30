@@ -1,4 +1,4 @@
-import type { Client, NestedClient } from '@orpc/client'
+import type { Client, NestedClient } from '@rubenbupe/orpc-client'
 import { createGeneralUtils, type GeneralUtils } from './general-utils'
 import { createProcedureUtils, type ProcedureUtils } from './procedure-utils'
 

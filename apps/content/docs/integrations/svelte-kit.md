@@ -13,7 +13,7 @@ description: Integrate oRPC with SvelteKit
 
 ```ts [src/routes/rpc/[...rest]/+server.ts]
 import { error } from '@sveltejs/kit'
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 
 const handler = new RPCHandler(router)
 

@@ -1,6 +1,6 @@
-import type { StandardLazyRequest } from '@orpc/standard-server'
+import type { StandardLazyRequest } from '@rubenbupe/orpc-standard-server'
 import type { NodeHttpRequest, NodeHttpResponse } from './types'
-import { once } from '@orpc/shared'
+import { once } from '@rubenbupe/orpc-shared'
 import { toStandardBody } from './body'
 import { toAbortSignal } from './signal'
 

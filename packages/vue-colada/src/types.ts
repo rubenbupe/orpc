@@ -1,5 +1,5 @@
-import type { ClientContext } from '@orpc/client'
-import type { SetOptional } from '@orpc/shared'
+import type { ClientContext } from '@rubenbupe/orpc-client'
+import type { SetOptional } from '@rubenbupe/orpc-shared'
 import type { UseMutationOptions, UseQueryOptions } from '@pinia/colada'
 import type { MaybeRefOrGetter } from 'vue'
 

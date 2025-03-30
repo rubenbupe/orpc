@@ -1,10 +1,10 @@
-import type { ORPCError } from '@orpc/client'
-import type { StandardOpenAPISerializer } from '@orpc/openapi-client/standard'
-import type { AnyProcedure } from '@orpc/server'
-import type { StandardCodec, StandardParams } from '@orpc/server/standard'
-import type { StandardHeaders, StandardLazyRequest, StandardResponse } from '@orpc/standard-server'
-import { fallbackContractConfig } from '@orpc/contract'
-import { isObject } from '@orpc/shared'
+import type { ORPCError } from '@rubenbupe/orpc-client'
+import type { StandardOpenAPISerializer } from '@rubenbupe/orpc-openapi-client/standard'
+import type { AnyProcedure } from '@rubenbupe/orpc-server'
+import type { StandardCodec, StandardParams } from '@rubenbupe/orpc-server/standard'
+import type { StandardHeaders, StandardLazyRequest, StandardResponse } from '@rubenbupe/orpc-standard-server'
+import { fallbackContractConfig } from '@rubenbupe/orpc-contract'
+import { isObject } from '@rubenbupe/orpc-shared'
 
 export class StandardOpenAPICodec implements StandardCodec {
   constructor(

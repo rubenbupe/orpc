@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/client'
+import { ORPCError } from '@rubenbupe/orpc-client'
 import { z } from 'zod'
 import { createORPCErrorConstructorMap, validateORPCError } from './error'
 import { isLazy, lazy, unlazy } from './lazy'

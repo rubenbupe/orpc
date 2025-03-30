@@ -1,4 +1,4 @@
-import type { Client, NestedClient, ORPCError } from '@orpc/client'
+import type { Client, NestedClient, ORPCError } from '@rubenbupe/orpc-client'
 
 export type JsonifiedValue<T> =
     T extends string ? T

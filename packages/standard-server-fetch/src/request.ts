@@ -1,6 +1,6 @@
-import type { StandardLazyRequest, StandardRequest } from '@orpc/standard-server'
+import type { StandardLazyRequest, StandardRequest } from '@rubenbupe/orpc-standard-server'
 import type { ToFetchBodyOptions } from './body'
-import { once } from '@orpc/shared'
+import { once } from '@rubenbupe/orpc-shared'
 import { toFetchBody, toStandardBody } from './body'
 import { toFetchHeaders, toStandardHeaders } from './headers'
 

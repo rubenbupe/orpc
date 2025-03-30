@@ -29,7 +29,7 @@ export default antfu({
           '@standard-schema/spec',
           '@standard-schema/spec/*',
         ],
-        message: 'Please import from @orpc/* instead',
+        message: 'Please import from @rubenbupe/orpc-* instead',
       }],
     }],
   },

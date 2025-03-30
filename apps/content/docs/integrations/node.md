@@ -15,8 +15,8 @@ Rather than converting Node’s native server objects to the Fetch API under the
 
 ```ts
 import { createServer } from 'node:http'
-import { RPCHandler } from '@orpc/server/node'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [
@@ -49,8 +49,8 @@ The `handler` can be any supported oRPC handler, such as [RPCHandler](/docs/rpc-
 
 ```ts
 import { createSecureServer } from 'node:http2'
-import { RPCHandler } from '@orpc/server/node'
-import { CORSPlugin } from '@orpc/server/plugins'
+import { RPCHandler } from '@rubenbupe/orpc-server/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
 
 const handler = new RPCHandler(router, {
   plugins: [

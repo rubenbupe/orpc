@@ -1,4 +1,4 @@
-import type { Meta } from '@orpc/contract'
+import type { Meta } from '@rubenbupe/orpc-contract'
 import type { Context, MergedCurrentContext, MergedInitialContext } from './context'
 import type { ORPCErrorConstructorMap } from './error'
 import type { AnyMiddleware, MapInputMiddleware, Middleware } from './middleware'

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { NewPlanetSchema, PlanetSchema, UpdatePlanetSchema } from '../schemas/planet'
-import { oc } from '@orpc/contract'
+import { oc } from '@rubenbupe/orpc-contract'
 
 export const listPlanets = oc
   .route({

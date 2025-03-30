@@ -1,8 +1,8 @@
 import type { Context } from '../../context'
 import type { StandardHandleOptions, StandardHandler, StandardHandlerPlugin } from '../standard'
 import type { FriendlyStandardHandleOptions } from '../standard/utils'
-import { intercept, type Interceptor, type MaybeOptionalOptions, resolveMaybeOptionalOptions, toArray } from '@orpc/shared'
-import { toFetchResponse, type ToFetchResponseOptions, toStandardLazyRequest } from '@orpc/standard-server-fetch'
+import { intercept, type Interceptor, type MaybeOptionalOptions, resolveMaybeOptionalOptions, toArray } from '@rubenbupe/orpc-shared'
+import { toFetchResponse, type ToFetchResponseOptions, toStandardLazyRequest } from '@rubenbupe/orpc-standard-server-fetch'
 import { resolveFriendlyStandardHandleOptions } from '../standard/utils'
 
 export type FetchHandleResult = { matched: true, response: Response } | { matched: false, response: undefined }

@@ -1,4 +1,4 @@
-import type { OmitChainMethodDeep } from '@orpc/shared'
+import type { OmitChainMethodDeep } from '@rubenbupe/orpc-shared'
 import type { ContractBuilder } from './builder'
 import type { ContractProcedureBuilder, ContractProcedureBuilderWithInput, ContractProcedureBuilderWithInputOutput, ContractProcedureBuilderWithOutput, ContractRouterBuilder } from './builder-variants'
 import type { MergedErrorMap } from './error'

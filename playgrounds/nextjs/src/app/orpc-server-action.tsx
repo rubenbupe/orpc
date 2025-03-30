@@ -1,8 +1,8 @@
 'use client'
 
-import { useServerAction } from '@orpc/react/hooks'
+import { useServerAction } from '@rubenbupe/orpc-react/hooks'
 import { getting } from './actions'
-import { onSuccess } from '@orpc/client'
+import { onSuccess } from '@rubenbupe/orpc-client'
 
 export function OrpcServerAction() {
   const state = useServerAction(getting, {

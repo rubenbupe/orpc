@@ -1,4 +1,4 @@
-import { isObject, type MaybeOptionalOptions } from '@orpc/shared'
+import { isObject, type MaybeOptionalOptions } from '@rubenbupe/orpc-shared'
 
 export const COMMON_ORPC_ERROR_DEFS = {
   BAD_REQUEST: {

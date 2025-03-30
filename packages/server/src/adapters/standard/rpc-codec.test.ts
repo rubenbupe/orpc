@@ -1,4 +1,4 @@
-import { ORPCError } from '@orpc/contract'
+import { ORPCError } from '@rubenbupe/orpc-contract'
 import { ping } from '../../../tests/shared'
 import { StandardRPCCodec } from './rpc-codec'
 

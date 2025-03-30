@@ -1,4 +1,4 @@
-import { ContractProcedure } from '@orpc/contract'
+import { ContractProcedure } from '@rubenbupe/orpc-contract'
 import { z } from 'zod'
 import { contract, ping } from '../tests/shared'
 import { lazy, unlazy } from './lazy'

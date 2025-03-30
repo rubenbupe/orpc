@@ -39,9 +39,9 @@ You can extend the list of supported types by [creating a custom serializer](/do
 ## Setup and Integration
 
 ```ts
-import { RPCHandler } from '@orpc/server/fetch' // or '@orpc/server/node'
-import { CORSPlugin } from '@orpc/server/plugins'
-import { onError } from '@orpc/server'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch' // or '@rubenbupe/orpc-server/node'
+import { CORSPlugin } from '@rubenbupe/orpc-server/plugins'
+import { onError } from '@rubenbupe/orpc-server'
 
 const handler = new RPCHandler(router, {
   plugins: [

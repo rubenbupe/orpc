@@ -1,5 +1,5 @@
-import type { ContractRouterClient } from '@orpc/contract'
-import type { RouterClient } from '@orpc/server'
+import type { ContractRouterClient } from '@rubenbupe/orpc-contract'
+import type { RouterClient } from '@rubenbupe/orpc-server'
 import type { router as contract } from '../../contract/tests/shared'
 import type { router } from '../../server/tests/shared'
 import type { ClientLink } from './types'

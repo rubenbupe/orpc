@@ -1,4 +1,4 @@
-import type { HTTPPath } from '@orpc/client'
+import type { HTTPPath } from '@rubenbupe/orpc-client'
 
 /**
  * @internal

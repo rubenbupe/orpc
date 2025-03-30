@@ -1,5 +1,5 @@
-import type { AnySchema, ContractProcedure, ErrorMap, MergedErrorMap, Schema } from '@orpc/contract'
-import type { OmitChainMethodDeep } from '@orpc/shared'
+import type { AnySchema, ContractProcedure, ErrorMap, MergedErrorMap, Schema } from '@rubenbupe/orpc-contract'
+import type { OmitChainMethodDeep } from '@rubenbupe/orpc-shared'
 import type { Builder } from './builder'
 import type { BuilderWithMiddlewares, ProcedureBuilder, ProcedureBuilderWithInput, ProcedureBuilderWithInputOutput, ProcedureBuilderWithOutput, RouterBuilder } from './builder-variants'
 import type { Context } from './context'

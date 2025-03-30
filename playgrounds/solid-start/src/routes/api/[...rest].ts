@@ -1,9 +1,9 @@
 import type { APIEvent } from '@solidjs/start/server'
-import { OpenAPIHandler } from '@orpc/openapi/fetch'
+import { OpenAPIHandler } from '@rubenbupe/orpc-openapi/fetch'
 import { router } from '~/router'
-import { ZodSmartCoercionPlugin } from '@orpc/zod'
+import { ZodSmartCoercionPlugin } from '@rubenbupe/orpc-zod'
 import '~/polyfill'
-import { onError } from '@orpc/server'
+import { onError } from '@rubenbupe/orpc-server'
 
 const handler = new OpenAPIHandler(router, {
   interceptors: [

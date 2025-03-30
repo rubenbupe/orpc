@@ -1,8 +1,8 @@
 import type { APIEvent } from '@solidjs/start/server'
-import { RPCHandler } from '@orpc/server/fetch'
+import { RPCHandler } from '@rubenbupe/orpc-server/fetch'
 import { router } from '~/router'
 import '~/polyfill'
-import { onError } from '@orpc/server'
+import { onError } from '@rubenbupe/orpc-server'
 
 const handler = new RPCHandler(router, {
   interceptors: [

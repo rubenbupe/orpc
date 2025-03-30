@@ -1,4 +1,4 @@
-import { eventIterator, os } from '@orpc/server'
+import { eventIterator, os } from '@rubenbupe/orpc-server'
 import { z } from 'zod'
 
 const MAX_EVENTS = 5

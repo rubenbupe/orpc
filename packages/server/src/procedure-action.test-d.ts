@@ -1,4 +1,4 @@
-import type { ORPCError, ORPCErrorJSON } from '@orpc/client'
+import type { ORPCError, ORPCErrorJSON } from '@rubenbupe/orpc-client'
 import type { baseErrorMap, inputSchema, outputSchema } from '../../contract/tests/shared'
 import type { ActionableClient, ActionableError, ProcedureActionableClient, UnactionableError } from './procedure-action'
 

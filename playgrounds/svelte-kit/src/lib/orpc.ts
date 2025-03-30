@@ -1,8 +1,8 @@
-import type { RouterClient } from '@orpc/server'
+import type { RouterClient } from '@rubenbupe/orpc-server'
 import type { router } from '../router'
-import { createORPCClient } from '@orpc/client'
-import { RPCLink } from '@orpc/client/fetch'
-import { createORPCSvelteQueryUtils } from '@orpc/svelte-query'
+import { createORPCClient } from '@rubenbupe/orpc-client'
+import { RPCLink } from '@rubenbupe/orpc-client/fetch'
+import { createORPCSvelteQueryUtils } from '@rubenbupe/orpc-svelte-query'
 
 const rpcLink = new RPCLink({
   url: new URL('/rpc', typeof window !== 'undefined' ? window.location.href : 'http://localhost:3000'),
