@@ -21,7 +21,7 @@
     "./next": "./src/adapters/next/index.ts",
     "./node": "./src/adapters/node/index.ts"
   },
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.mts",
   "publishConfig": {
@@ -29,37 +29,37 @@
       ".": {
         "types": "./dist/index.d.mts",
         "import": "./dist/index.mjs",
-        "require": "./dist/index.js",
+        "require": "./dist/index.cjs",
         "default": "./dist/index.mjs"
       },
       "./standard": {
         "types": "./dist/adapters/standard/index.d.mts",
         "import": "./dist/adapters/standard/index.mjs",
-        "require": "./dist/adapters/standard/index.js",
+        "require": "./dist/adapters/standard/index.cjs",
         "default": "./dist/adapters/standard/index.mjs"
       },
       "./fetch": {
         "types": "./dist/adapters/fetch/index.d.mts",
         "import": "./dist/adapters/fetch/index.mjs",
-        "require": "./dist/adapters/fetch/index.js",
+        "require": "./dist/adapters/fetch/index.cjs",
         "default": "./dist/adapters/fetch/index.mjs"
       },
       "./hono": {
         "types": "./dist/adapters/hono/index.d.mts",
         "import": "./dist/adapters/hono/index.mjs",
-        "require": "./dist/adapters/hono/index.js",
+        "require": "./dist/adapters/hono/index.cjs",
         "default": "./dist/adapters/hono/index.mjs"
       },
       "./next": {
         "types": "./dist/adapters/next/index.d.mts",
         "import": "./dist/adapters/next/index.mjs",
-        "require": "./dist/adapters/next/index.js",
+        "require": "./dist/adapters/next/index.cjs",
         "default": "./dist/adapters/next/index.mjs"
       },
       "./node": {
         "types": "./dist/adapters/node/index.d.mts",
         "import": "./dist/adapters/node/index.mjs",
-        "require": "./dist/adapters/node/index.js",
+        "require": "./dist/adapters/node/index.cjs",
         "default": "./dist/adapters/node/index.mjs"
       }
     }
