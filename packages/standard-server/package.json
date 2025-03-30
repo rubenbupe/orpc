@@ -37,7 +37,6 @@
     "type:check": "tsc -b"
   },
   "dependencies": {
-    "@rubenbupe/orpc-shared": "workspace:*",
-    "@tinyhttp/content-disposition": "^2.2.2"
+    "@rubenbupe/orpc-shared": "workspace:*"
   }
 }

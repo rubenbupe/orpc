@@ -1,7 +1,7 @@
 import type { StandardHeaders } from './types'
 import { toArray } from '@rubenbupe/orpc-shared'
 
-export { contentDisposition, parse as parseContentDisposition } from '@tinyhttp/content-disposition'
+export { contentDisposition, parse as parseContentDisposition } from './content-disposition'
 
 export function mergeStandardHeaders(a: StandardHeaders, b: StandardHeaders): StandardHeaders {
   const merged = { ...a }
